@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\BoehmGC.cpp"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\GCHandle.cpp"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\GarbageCollector.cpp"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\NullGC.cpp"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\WriteBarrier.cpp"
+#include "F:\Devs\HoloLens2-ResearchMode-Unity\UnityXRSample\UWP\Il2CppOutputProject\IL2CPP\libil2cpp\gc\WriteBarrierValidation.cpp"
