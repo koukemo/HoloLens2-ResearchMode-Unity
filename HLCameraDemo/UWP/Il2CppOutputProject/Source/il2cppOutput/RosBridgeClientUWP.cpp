@@ -34630,7 +34630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoadMapResponse__ctor_m126F0A26495B6E297
 IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_Log_t8646360F03B7F45B22EF5EEFD7100C86EC3DFFA6 (Log_t8646360F03B7F45B22EF5EEFD7100C86EC3DFFA6 * __this, String_t* ___message0, const RuntimeMethod* method)
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc)(char*);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((RuntimeDelegate*)__this)->method->nativeFunction);
 
 	// Marshaling of parameter '___message0' to native representation
 	char* ____message0_marshaled = NULL;

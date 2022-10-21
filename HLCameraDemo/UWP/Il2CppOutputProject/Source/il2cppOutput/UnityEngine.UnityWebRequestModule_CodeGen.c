@@ -220,37 +220,41 @@ extern void DownloadHandler_GetText_mF8C51EFA7A82C9C198A3207D0FED84EEB8ED373F (v
 extern void DownloadHandler_GetTextEncoder_mEAABE10BCA8FFAADB30C5623A10A9072A21D002D (void);
 // 0x00000068 System.String UnityEngine.Networking.DownloadHandler::GetContentType()
 extern void DownloadHandler_GetContentType_m3B0EEFBDC91FF18736B3FC0BD7A6319104056A0D (void);
-// 0x00000069 System.Byte[] UnityEngine.Networking.DownloadHandler::InternalGetByteArray(UnityEngine.Networking.DownloadHandler)
+// 0x00000069 System.Void UnityEngine.Networking.DownloadHandler::ReceiveContentLengthHeader(System.UInt64)
+extern void DownloadHandler_ReceiveContentLengthHeader_mD3B607EDDF946896B9877C91DE1EDD6C39B16CF3 (void);
+// 0x0000006A System.Void UnityEngine.Networking.DownloadHandler::ReceiveContentLength(System.Int32)
+extern void DownloadHandler_ReceiveContentLength_m7788739919D3BB09DBF3EEE1AE211C2701672316 (void);
+// 0x0000006B System.Byte[] UnityEngine.Networking.DownloadHandler::InternalGetByteArray(UnityEngine.Networking.DownloadHandler)
 extern void DownloadHandler_InternalGetByteArray_m1B4D723FA86D064B492ADBE3A9A13DD03209A4DC (void);
-// 0x0000006A System.IntPtr UnityEngine.Networking.DownloadHandlerBuffer::Create(UnityEngine.Networking.DownloadHandlerBuffer)
+// 0x0000006C System.IntPtr UnityEngine.Networking.DownloadHandlerBuffer::Create(UnityEngine.Networking.DownloadHandlerBuffer)
 extern void DownloadHandlerBuffer_Create_mC639D070FF70AC550BBBAFD23CBB3A26DFE915AA (void);
-// 0x0000006B System.Void UnityEngine.Networking.DownloadHandlerBuffer::InternalCreateBuffer()
+// 0x0000006D System.Void UnityEngine.Networking.DownloadHandlerBuffer::InternalCreateBuffer()
 extern void DownloadHandlerBuffer_InternalCreateBuffer_mC53D69B05DEAEA785BD0187902DAD86C34EED256 (void);
-// 0x0000006C System.Void UnityEngine.Networking.DownloadHandlerBuffer::.ctor()
+// 0x0000006E System.Void UnityEngine.Networking.DownloadHandlerBuffer::.ctor()
 extern void DownloadHandlerBuffer__ctor_m01FD35970E4B4FC45FC99A648408F53A8B164774 (void);
-// 0x0000006D System.Byte[] UnityEngine.Networking.DownloadHandlerBuffer::GetData()
+// 0x0000006F System.Byte[] UnityEngine.Networking.DownloadHandlerBuffer::GetData()
 extern void DownloadHandlerBuffer_GetData_mAFE5BF2E12AE24B162769E9B736280A802E1A3AB (void);
-// 0x0000006E System.Byte[] UnityEngine.Networking.DownloadHandlerBuffer::InternalGetData()
+// 0x00000070 System.Byte[] UnityEngine.Networking.DownloadHandlerBuffer::InternalGetData()
 extern void DownloadHandlerBuffer_InternalGetData_m69989D8688328151EF518F3E705C019D02C045C8 (void);
-// 0x0000006F System.Void UnityEngine.Networking.UploadHandler::Release()
+// 0x00000071 System.Void UnityEngine.Networking.UploadHandler::Release()
 extern void UploadHandler_Release_mE5F9BC6193A7285099D6409401414D886AB522C8 (void);
-// 0x00000070 System.Void UnityEngine.Networking.UploadHandler::.ctor()
+// 0x00000072 System.Void UnityEngine.Networking.UploadHandler::.ctor()
 extern void UploadHandler__ctor_mC1A1A5EDEDD4F9D7A6A8E9854E0CC6943B51158F (void);
-// 0x00000071 System.Void UnityEngine.Networking.UploadHandler::Finalize()
+// 0x00000073 System.Void UnityEngine.Networking.UploadHandler::Finalize()
 extern void UploadHandler_Finalize_mE43816DF1E8AFC6EA32518CE8C30A5EF99F06934 (void);
-// 0x00000072 System.Void UnityEngine.Networking.UploadHandler::Dispose()
+// 0x00000074 System.Void UnityEngine.Networking.UploadHandler::Dispose()
 extern void UploadHandler_Dispose_mC449C0EDAD6666DDE349A6F9796CEC7C86154F41 (void);
-// 0x00000073 System.Void UnityEngine.Networking.UploadHandler::set_contentType(System.String)
+// 0x00000075 System.Void UnityEngine.Networking.UploadHandler::set_contentType(System.String)
 extern void UploadHandler_set_contentType_mAECD24AB554541300BD126E01C65329F0A29A328 (void);
-// 0x00000074 System.Void UnityEngine.Networking.UploadHandler::SetContentType(System.String)
+// 0x00000076 System.Void UnityEngine.Networking.UploadHandler::SetContentType(System.String)
 extern void UploadHandler_SetContentType_m95EBCDCE4E8BF9AB78953B37C89B7F4BB6F75DA7 (void);
-// 0x00000075 System.Void UnityEngine.Networking.UploadHandler::InternalSetContentType(System.String)
+// 0x00000077 System.Void UnityEngine.Networking.UploadHandler::InternalSetContentType(System.String)
 extern void UploadHandler_InternalSetContentType_mD7BDE8CD2F2F06BA9959E478042A040DD015E27F (void);
-// 0x00000076 System.IntPtr UnityEngine.Networking.UploadHandlerRaw::Create(UnityEngine.Networking.UploadHandlerRaw,System.Byte[])
+// 0x00000078 System.IntPtr UnityEngine.Networking.UploadHandlerRaw::Create(UnityEngine.Networking.UploadHandlerRaw,System.Byte[])
 extern void UploadHandlerRaw_Create_m7BB036CE32369E49257AA107080A1F214BE7DA01 (void);
-// 0x00000077 System.Void UnityEngine.Networking.UploadHandlerRaw::.ctor(System.Byte[])
+// 0x00000079 System.Void UnityEngine.Networking.UploadHandlerRaw::.ctor(System.Byte[])
 extern void UploadHandlerRaw__ctor_mB46261D7AA64B605D5CA8FF9027A4A32E57A7BD9 (void);
-static Il2CppMethodPointer s_methodPointers[119] = 
+static Il2CppMethodPointer s_methodPointers[121] = 
 {
 	WebRequestUtils_RedirectTo_m0E8715D4658E15C9775C6D06E1891267CB3C852F,
 	WebRequestUtils_MakeInitialUrl_mD575E2FEAC3685E9030B528769BFAC7CE0534290,
@@ -356,6 +360,8 @@ static Il2CppMethodPointer s_methodPointers[119] =
 	DownloadHandler_GetText_mF8C51EFA7A82C9C198A3207D0FED84EEB8ED373F,
 	DownloadHandler_GetTextEncoder_mEAABE10BCA8FFAADB30C5623A10A9072A21D002D,
 	DownloadHandler_GetContentType_m3B0EEFBDC91FF18736B3FC0BD7A6319104056A0D,
+	DownloadHandler_ReceiveContentLengthHeader_mD3B607EDDF946896B9877C91DE1EDD6C39B16CF3,
+	DownloadHandler_ReceiveContentLength_m7788739919D3BB09DBF3EEE1AE211C2701672316,
 	DownloadHandler_InternalGetByteArray_m1B4D723FA86D064B492ADBE3A9A13DD03209A4DC,
 	DownloadHandlerBuffer_Create_mC639D070FF70AC550BBBAFD23CBB3A26DFE915AA,
 	DownloadHandlerBuffer_InternalCreateBuffer_mC53D69B05DEAEA785BD0187902DAD86C34EED256,
@@ -372,134 +378,136 @@ static Il2CppMethodPointer s_methodPointers[119] =
 	UploadHandlerRaw_Create_m7BB036CE32369E49257AA107080A1F214BE7DA01,
 	UploadHandlerRaw__ctor_mB46261D7AA64B605D5CA8FF9027A4A32E57A7BD9,
 };
-static const int32_t s_InvokerIndices[119] = 
+static const int32_t s_InvokerIndices[121] = 
 {
-	7137,
-	7137,
-	6716,
-	7768,
-	8107,
-	8075,
-	5587,
-	1549,
-	1070,
-	5486,
-	5486,
-	7237,
+	7045,
+	7045,
+	6641,
+	7677,
+	8016,
+	7984,
+	5537,
+	1536,
+	1064,
+	5436,
+	5436,
+	7145,
+	7057,
+	7677,
+	7045,
+	7677,
+	7045,
+	6033,
 	7149,
-	7768,
-	7137,
-	7768,
-	7137,
-	6090,
-	7241,
-	7768,
-	6769,
-	6717,
-	7240,
-	7825,
-	8107,
-	4546,
-	5587,
-	7764,
-	5525,
-	4582,
-	5525,
-	4582,
-	5525,
-	4582,
-	8065,
-	5587,
-	5587,
-	5587,
-	2674,
-	1070,
-	5587,
-	5587,
-	5587,
-	5486,
-	5486,
-	5587,
-	3243,
-	4507,
-	3275,
-	4546,
-	5447,
-	5486,
-	5486,
-	4546,
-	4546,
-	3275,
-	4546,
-	5448,
-	5525,
-	5447,
-	3554,
-	1756,
-	2674,
-	3554,
-	5486,
-	5486,
-	3275,
-	5486,
-	4546,
-	3275,
-	5486,
-	4546,
-	3275,
-	5486,
-	4546,
-	3243,
-	4507,
-	7768,
-	7768,
-	7137,
-	7137,
-	7137,
-	7424,
-	7137,
-	7424,
-	7768,
-	7137,
-	7682,
-	5587,
-	5587,
-	5587,
-	3932,
-	3932,
-	5587,
-	5587,
-	5587,
-	5587,
-	5587,
-	5486,
-	5486,
-	5486,
-	5486,
-	5486,
-	5486,
-	7768,
-	7682,
-	5587,
-	5587,
-	5486,
-	5486,
-	5587,
-	5587,
-	5587,
-	5587,
-	4546,
-	4546,
-	4546,
-	7085,
-	4546,
+	7677,
+	6694,
+	6642,
+	7148,
+	7734,
+	8016,
+	4511,
+	5537,
+	7673,
+	5475,
+	4547,
+	5475,
+	4547,
+	5475,
+	4547,
+	7974,
+	5537,
+	5537,
+	5537,
+	2650,
+	1064,
+	5537,
+	5537,
+	5537,
+	5436,
+	5436,
+	5537,
+	3216,
+	4472,
+	3248,
+	4511,
+	5397,
+	5436,
+	5436,
+	4511,
+	4511,
+	3248,
+	4511,
+	5398,
+	5475,
+	5397,
+	3525,
+	1742,
+	2650,
+	3525,
+	5436,
+	5436,
+	3248,
+	5436,
+	4511,
+	3248,
+	5436,
+	4511,
+	3248,
+	5436,
+	4511,
+	3216,
+	4472,
+	7677,
+	7677,
+	7045,
+	7045,
+	7045,
+	7333,
+	7045,
+	7333,
+	7677,
+	7045,
+	7591,
+	5537,
+	5537,
+	5537,
+	3903,
+	3903,
+	5537,
+	5537,
+	5537,
+	5537,
+	5537,
+	5436,
+	5436,
+	5436,
+	5436,
+	5436,
+	5436,
+	4473,
+	4472,
+	7677,
+	7591,
+	5537,
+	5537,
+	5436,
+	5436,
+	5537,
+	5537,
+	5537,
+	5537,
+	4511,
+	4511,
+	4511,
+	6993,
+	4511,
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_UnityWebRequestModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule = 
 {
 	"UnityEngine.UnityWebRequestModule.dll",
-	119,
+	121,
 	s_methodPointers,
 	0,
 	NULL,

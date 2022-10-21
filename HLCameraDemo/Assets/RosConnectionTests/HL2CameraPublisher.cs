@@ -1,133 +1,110 @@
+/*
+Original code from Siemens AG modified by Shivani Guptasarma, 2021.
+WebCamTexture code from Peter Koch, 2017 https://www.youtube.com/watch?v=q96sVKLhjdg
+*/
+
+/*
+� CentraleSupelec, 2017
+Author: Dr. Jeremy Fix (jeremy.fix@centralesupelec.fr)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+<http://www.apache.org/licenses/LICENSE-2.0>.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+// Adjustments to new Publication Timing and Execution Framework 
+// � Siemens AG, 2018, Dr. Martin Bischoff (martin.bischoff@siemens.com)
+
 using UnityEngine;
-using UnityEngine.Windows.WebCam;
-using System.Linq;
 
-using RosSharp.RosBridgeClient;
-
-public class HL2CameraPublisher : UnityPublisher<RosSharp.RosBridgeClient.MessageTypes.Sensor.CompressedImage>
+namespace RosSharp.RosBridgeClient
 {
-    public Camera ImageCamera;
-    public string FrameId = "HLCamera";
-    public int resolutionWidth = 640;
-    public int resolutionHeight = 480;
-    [Range(0, 100)]
-    public int qualityLevel = 50;
-
-    PhotoCapture photoCaptureObject = null;
-
-    private RosSharp.RosBridgeClient.MessageTypes.Sensor.CompressedImage message;
-    private Texture2D texture2D;
-    private Rect rect;
-
-    protected override void Start()
+    public class HL2CameraPublisher : UnityPublisher<MessageTypes.Sensor.CompressedImage>
     {
-        base.Start();
-        InitializeMessage();
-        InitializeGameObject();
+        //public Camera ImageCamera;
+        public string FrameId = "Camera";
+        public int resolutionWidth = 640;
+        public int resolutionHeight = 480;
+        [Range(0, 100)]
+        public int qualityLevel = 50;
 
-        PhotoCapture.CreateAsync(false, OnPhotoCaptureCreated);
-    }
+        private MessageTypes.Sensor.CompressedImage message;
+        //private Texture2D texture2D;
+        //private Rect rect;
 
-    public void OnClickStart()
-    {
-        base.Start();
-        InitializeMessage();
-        InitializeGameObject();   
+        WebCamTexture webcam;
+        Texture2D webcamImage;
 
-        PhotoCapture.CreateAsync(false, OnPhotoCaptureCreated);
-    }
+        protected override void Start()
+        {
+            base.Start();
 
-    private void FixedUpdate()
-    {
-        if (texture2D != null)
+            //the following code accesses webcam and configures capture
+            WebCamDevice[] devices = WebCamTexture.devices;
+            for (int i = 0; i < devices.Length; i++)
+                Debug.Log(devices[i].name);
+            //start webcam feed
+            webcam = new WebCamTexture(devices[3].name);
+            webcam.Play();
+            Debug.LogFormat("webcam: {0} {1} x {2}", webcam.deviceName, webcam.width, webcam.height);
+            webcamImage = new Texture2D(webcam.width, webcam.height);
+
+            //modified from original
+            //InitializeGameObject();
+            InitializeMessage();
+            //Camera.onPostRender += UpdateImage; //we don't want Unity camera
             UpdateMessage();
-    }
+        }
 
-    void OnPhotoCaptureCreated(PhotoCapture captureObject)
-    {
-        photoCaptureObject = captureObject;
-
-        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending((res) => res.width * res.height).First();
-
-        CameraParameters c = new CameraParameters();
-        c.hologramOpacity = 0.0f;
-        c.cameraResolutionWidth = cameraResolution.width;
-        c.cameraResolutionHeight = cameraResolution.height;
-        //c.cameraResolutionWidth = resolutionWidth;
-        //c.cameraResolutionHeight = resolutionHeight;
-        c.pixelFormat = CapturePixelFormat.BGRA32;
-
-        captureObject.StartPhotoModeAsync(c, OnPhotoModeStarted);
-    }
-
-    private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
-    {
-        if (result.success)
+        //run in every frame (to replace camera callback)
+        private void Update()
         {
-            photoCaptureObject.TakePhotoAsync(OnCapturedPhotoToMemory);
+            UpdateMessage();
         }
-        else
+
+        //modified from original:
+        /*private void UpdateImage(Camera _camera)
         {
-            Debug.LogError("Unable to start photo mode!");
-        }
-    }
-
-    void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame) 
-    {
-        
-        if (result.success)
-        {            
-            // ターゲットテクスチャに RAW 画像データをコピーします
-            photoCaptureFrame.UploadImageDataToTexture(texture2D);
-
-            // テクスチャが適用されるゲームオブジェクトを作成
-            GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-            Renderer quadRenderer = quad.GetComponent<Renderer>() as Renderer;
-            quadRenderer.material = new Material(Shader.Find("Unlit/Texture"));
-
-            quad.transform.parent = this.transform;
-            quad.transform.localPosition = new Vector3(0.0f, 0.0f, 5.0f);
-
-            quadRenderer.material.SetTexture("_MainTex", texture2D);
+            if (texture2D != null && _camera == this.ImageCamera)
+                UpdateMessage();
         }
 
-        // カメラを非アクティブにします
-        //photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
-    }
+        private void InitializeGameObject()
+        {
+            texture2D = new Texture2D(resolutionWidth, resolutionHeight, TextureFormat.RGB24, false);
+            rect = new Rect(0, 0, resolutionWidth, resolutionHeight);
+            ImageCamera.targetTexture = new RenderTexture(resolutionWidth, resolutionHeight, 24);
+        }*/
 
-    void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
-    {
-        photoCaptureObject.Dispose();
-        photoCaptureObject = null;
-    }
+        public Texture2D TakePhoto()
+        {
+            //Debug.Log("take photo");
+            webcamImage.SetPixels(webcam.GetPixels());
+            webcamImage.Apply();
+            Debug.Log(webcamImage.dimension);
+            return webcamImage;
+        }
 
-    private void InitializeGameObject()
-    {
-        texture2D = new Texture2D(resolutionWidth, resolutionHeight, TextureFormat.RGB24, false);
-        rect = new Rect(0, 0, resolutionWidth, resolutionHeight);
-        ImageCamera.targetTexture = new RenderTexture(resolutionWidth, resolutionHeight, 24);
-    }
+        private void InitializeMessage()
+        {
+            message = new MessageTypes.Sensor.CompressedImage();
+            message.header.frame_id = FrameId;
+            message.format = "jpeg";
+        }
 
-    private void InitializeMessage()
-    {
-        message = new RosSharp.RosBridgeClient.MessageTypes.Sensor.CompressedImage();
-        message.header.frame_id = FrameId;
-        message.format = "jpg";
-    }
+        private void UpdateMessage()
+        {
+            message.header.Update();
+            webcamImage = TakePhoto();
+            message.data = webcamImage.EncodeToJPG(qualityLevel);
+            Publish(message);
+        }
 
-    private void UpdateMessage()
-    {
-        photoCaptureObject.TakePhotoAsync(OnCapturedPhotoToMemory);
-
-        message.header.Update();
-        texture2D.ReadPixels(rect, 0, 0);
-        message.data = texture2D.EncodeToJPG(qualityLevel);
-        Publish(message);
     }
-    
-    private void OnApplicationQuit()
-    {
-        photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
-    }
-
 }

@@ -2058,10 +2058,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SceneUnderstandingObserverProfile_get_Or
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneUnderstandingObserverProfile__ctor_mA70FD4C1224A4432E4E0D8989C4C0A4E4D5F7DF2 (SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * __this, const RuntimeMethod* method)
 {
 	{
-		// private bool updateOnceInitialized = false;
-		__this->set_updateOnceInitialized_10((bool)0);
-		// private bool autoUpdate = false;
-		__this->set_autoUpdate_11((bool)0);
 		// private int defaultPhysicsLayer = 31;
 		__this->set_defaultPhysicsLayer_12(((int32_t)31));
 		// private SpatialAwarenessSurfaceTypes surfaceTypes =
@@ -2072,20 +2068,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneUnderstandingObserverProfile__ctor_
 		__this->set_surfaceTypes_13(((int32_t)30));
 		// private int instantiationBatchRate = 1;
 		__this->set_instantiationBatchRate_14(1);
-		// private Material defaultMaterial = null;
-		__this->set_defaultMaterial_15((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
-		// private Material defaultWorldMeshMaterial = null;
-		__this->set_defaultWorldMeshMaterial_16((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
-		// private bool shouldLoadFromFile = false;
-		__this->set_shouldLoadFromFile_17((bool)0);
-		// private TextAsset serializedScene = null;
-		__this->set_serializedScene_18((TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 *)NULL);
 		// private bool createGameObjects = true;
 		__this->set_createGameObjects_19((bool)1);
 		// private bool requestPlaneData = true;
 		__this->set_requestPlaneData_20((bool)1);
-		// private bool requestMeshData = false;
-		__this->set_requestMeshData_21((bool)0);
 		// private bool inferRegions = true;
 		__this->set_inferRegions_22((bool)1);
 		// private float firstAutoUpdateDelay = 1.0f;
@@ -2121,8 +2107,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneUnderstandingObserverProfile__ctor_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver__ctor_m9E905F1B8501076ADC5176506BB277D50C53E0C1 (WindowsSceneUnderstandingObserver_t594FCDE9D978D2C2EACF0D6FDD425C5C212F5BE3 * __this, RuntimeObject* ___spatialAwarenessSystem0, String_t* ___name1, uint32_t ___priority2, BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * ___profile3, const RuntimeMethod* method)
 {
 	{
-		// private TextAsset serializedScene = null;
-		__this->set_serializedScene_42((TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 *)NULL);
 		// BaseMixedRealityProfile profile = null) : base(spatialAwarenessSystem, name, priority, profile)
 		RuntimeObject* L_0 = ___spatialAwarenessSystem0;
 		String_t* L_1 = ___name1;
@@ -2148,8 +2132,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_ReadPr
 		s_Il2CppMethodInitialized = true;
 	}
 	SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * V_0 = NULL;
-	bool V_1 = false;
-	bool V_2 = false;
 	{
 		// if (ConfigurationProfile == null)
 		BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * L_0;
@@ -2157,34 +2139,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_ReadPr
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_1 = L_1;
-		bool L_2 = V_1;
-		if (!L_2)
+		if (!L_1)
 		{
-			goto IL_0017;
+			goto IL_000f;
 		}
 	}
 	{
 		// return;
-		goto IL_0150;
+		return;
 	}
 
-IL_0017:
+IL_000f:
 	{
 		// SceneUnderstandingObserverProfile profile = ConfigurationProfile as SceneUnderstandingObserverProfile;
-		BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * L_3;
-		L_3 = VirtFuncInvoker0< BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * >::Invoke(22 /* Microsoft.MixedReality.Toolkit.BaseMixedRealityProfile Microsoft.MixedReality.Toolkit.BaseService::get_ConfigurationProfile() */, __this);
-		V_0 = ((SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 *)IsInstClass((RuntimeObject*)L_3, SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27_il2cpp_TypeInfo_var));
+		BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * L_2;
+		L_2 = VirtFuncInvoker0< BaseMixedRealityProfile_tC5DBD7146B1E1D467DE81BA1EAB45133408A59E1 * >::Invoke(22 /* Microsoft.MixedReality.Toolkit.BaseMixedRealityProfile Microsoft.MixedReality.Toolkit.BaseService::get_ConfigurationProfile() */, __this);
+		V_0 = ((SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 *)IsInstClass((RuntimeObject*)L_2, SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27_il2cpp_TypeInfo_var));
 		// if (profile == null)
-		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_4 = V_0;
+		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_3 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_5;
-		L_5 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_4, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_2 = L_5;
-		bool L_6 = V_2;
-		if (!L_6)
+		bool L_4;
+		L_4 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_3, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
 		{
-			goto IL_003f;
+			goto IL_002f;
 		}
 	}
 	{
@@ -2192,141 +2170,137 @@ IL_0017:
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_LogError_m8850D65592770A364D494025FF3A73E8D4D70485(_stringLiteralD8638A036277D99E851CF95C6DE4FE10A47DE9B8, /*hidden argument*/NULL);
 		// return;
-		goto IL_0150;
+		return;
 	}
 
-IL_003f:
+IL_002f:
 	{
 		// AutoUpdate = profile.AutoUpdate;
+		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_5 = V_0;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = SceneUnderstandingObserverProfile_get_AutoUpdate_m5916CECEC7AC75B33544F17370027D2C282D32C2_inline(L_5, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_AutoUpdate_mA4F32C29D71B01AA9C129F55A943C5397D253DA8_inline(__this, L_6, /*hidden argument*/NULL);
+		// UpdateOnceInitialized = profile.UpdateOnceInitialized;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_7 = V_0;
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = SceneUnderstandingObserverProfile_get_AutoUpdate_m5916CECEC7AC75B33544F17370027D2C282D32C2_inline(L_7, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_AutoUpdate_mA4F32C29D71B01AA9C129F55A943C5397D253DA8_inline(__this, L_8, /*hidden argument*/NULL);
-		// UpdateOnceInitialized = profile.UpdateOnceInitialized;
+		L_8 = SceneUnderstandingObserverProfile_get_UpdateOnceInitialized_mDE4F24E0DA93C651AA4AF3E7786922961CFC2756_inline(L_7, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_UpdateOnceInitialized_mE443C73CA37A7228D91CFF63415DE49FAB24D464_inline(__this, L_8, /*hidden argument*/NULL);
+		// DefaultMaterial = profile.DefaultMaterial;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_9 = V_0;
 		NullCheck(L_9);
-		bool L_10;
-		L_10 = SceneUnderstandingObserverProfile_get_UpdateOnceInitialized_mDE4F24E0DA93C651AA4AF3E7786922961CFC2756_inline(L_9, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_UpdateOnceInitialized_mE443C73CA37A7228D91CFF63415DE49FAB24D464_inline(__this, L_10, /*hidden argument*/NULL);
-		// DefaultMaterial = profile.DefaultMaterial;
+		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_10;
+		L_10 = SceneUnderstandingObserverProfile_get_DefaultMaterial_mC6B77C1BAD8C1B44A466132DF57B57BC85AB3B8B_inline(L_9, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_DefaultMaterial_m47775EA223FBEF86E62ADB84CFFCDE7B069BA080_inline(__this, L_10, /*hidden argument*/NULL);
+		// DefaultWorldMeshMaterial = profile.DefaultWorldMeshMaterial;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_11 = V_0;
 		NullCheck(L_11);
 		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_12;
-		L_12 = SceneUnderstandingObserverProfile_get_DefaultMaterial_mC6B77C1BAD8C1B44A466132DF57B57BC85AB3B8B_inline(L_11, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_DefaultMaterial_m47775EA223FBEF86E62ADB84CFFCDE7B069BA080_inline(__this, L_12, /*hidden argument*/NULL);
-		// DefaultWorldMeshMaterial = profile.DefaultWorldMeshMaterial;
+		L_12 = SceneUnderstandingObserverProfile_get_DefaultWorldMeshMaterial_mFB637FA03D6522A18FE17B39798314ADE4525F1C_inline(L_11, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_DefaultWorldMeshMaterial_m20744911214914CCBD387535B674E31E35D96653_inline(__this, L_12, /*hidden argument*/NULL);
+		// SurfaceTypes = profile.SurfaceTypes;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_13 = V_0;
 		NullCheck(L_13);
-		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_14;
-		L_14 = SceneUnderstandingObserverProfile_get_DefaultWorldMeshMaterial_mFB637FA03D6522A18FE17B39798314ADE4525F1C_inline(L_13, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_DefaultWorldMeshMaterial_m20744911214914CCBD387535B674E31E35D96653_inline(__this, L_14, /*hidden argument*/NULL);
-		// SurfaceTypes = profile.SurfaceTypes;
+		int32_t L_14;
+		L_14 = SceneUnderstandingObserverProfile_get_SurfaceTypes_mCD3A61F04B66B74FA373559E5664E4DF4CB1620B_inline(L_13, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_SurfaceTypes_mE8EBB6587E99CB5823433B9AFDFDDF01DE39D320_inline(__this, L_14, /*hidden argument*/NULL);
+		// RequestMeshData = profile.RequestMeshData;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_15 = V_0;
 		NullCheck(L_15);
-		int32_t L_16;
-		L_16 = SceneUnderstandingObserverProfile_get_SurfaceTypes_mCD3A61F04B66B74FA373559E5664E4DF4CB1620B_inline(L_15, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_SurfaceTypes_mE8EBB6587E99CB5823433B9AFDFDDF01DE39D320_inline(__this, L_16, /*hidden argument*/NULL);
-		// RequestMeshData = profile.RequestMeshData;
+		bool L_16;
+		L_16 = SceneUnderstandingObserverProfile_get_RequestMeshData_m3FBC906C26D8ACF42276A908991FDC820BC17D2C_inline(L_15, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_RequestMeshData_mC6F5D5D0D9D7E000D4499835FB2532B3079BEC59_inline(__this, L_16, /*hidden argument*/NULL);
+		// RequestPlaneData = profile.RequestPlaneData;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_17 = V_0;
 		NullCheck(L_17);
 		bool L_18;
-		L_18 = SceneUnderstandingObserverProfile_get_RequestMeshData_m3FBC906C26D8ACF42276A908991FDC820BC17D2C_inline(L_17, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_RequestMeshData_mC6F5D5D0D9D7E000D4499835FB2532B3079BEC59_inline(__this, L_18, /*hidden argument*/NULL);
-		// RequestPlaneData = profile.RequestPlaneData;
+		L_18 = SceneUnderstandingObserverProfile_get_RequestPlaneData_m568A10ACA52D3F570CBA48911C68B08E8489013B_inline(L_17, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_RequestPlaneData_m4A516E25562125FAC35D7C42CE83442B2BA62147_inline(__this, L_18, /*hidden argument*/NULL);
+		// InferRegions = profile.InferRegions;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_19 = V_0;
 		NullCheck(L_19);
 		bool L_20;
-		L_20 = SceneUnderstandingObserverProfile_get_RequestPlaneData_m568A10ACA52D3F570CBA48911C68B08E8489013B_inline(L_19, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_RequestPlaneData_m4A516E25562125FAC35D7C42CE83442B2BA62147_inline(__this, L_20, /*hidden argument*/NULL);
-		// InferRegions = profile.InferRegions;
+		L_20 = SceneUnderstandingObserverProfile_get_InferRegions_mFFE9EE4E7F59D2F803968D9B7581D0A781125D18_inline(L_19, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_InferRegions_mDFC354B26A6C030DAABEB17ED0A83765D26E081F_inline(__this, L_20, /*hidden argument*/NULL);
+		// CreateGameObjects = profile.CreateGameObjects;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_21 = V_0;
 		NullCheck(L_21);
 		bool L_22;
-		L_22 = SceneUnderstandingObserverProfile_get_InferRegions_mFFE9EE4E7F59D2F803968D9B7581D0A781125D18_inline(L_21, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_InferRegions_mDFC354B26A6C030DAABEB17ED0A83765D26E081F_inline(__this, L_22, /*hidden argument*/NULL);
-		// CreateGameObjects = profile.CreateGameObjects;
+		L_22 = SceneUnderstandingObserverProfile_get_CreateGameObjects_mCA93DD5160F80F3FDE77B31E0572CDF16DE447CB_inline(L_21, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_CreateGameObjects_mA6D8437BAA791CE57A20A64709A4683F69B1C638_inline(__this, L_22, /*hidden argument*/NULL);
+		// UsePersistentObjects = profile.UsePersistentObjects;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_23 = V_0;
 		NullCheck(L_23);
 		bool L_24;
-		L_24 = SceneUnderstandingObserverProfile_get_CreateGameObjects_mCA93DD5160F80F3FDE77B31E0572CDF16DE447CB_inline(L_23, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_CreateGameObjects_mA6D8437BAA791CE57A20A64709A4683F69B1C638_inline(__this, L_24, /*hidden argument*/NULL);
-		// UsePersistentObjects = profile.UsePersistentObjects;
+		L_24 = SceneUnderstandingObserverProfile_get_UsePersistentObjects_mF0C462594DA7648E405C29DF199DC67C6E4911EA_inline(L_23, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_UsePersistentObjects_m484B1C42CE4607A0E36179F05DBEC9F8DE359DAA_inline(__this, L_24, /*hidden argument*/NULL);
+		// UpdateInterval = profile.UpdateInterval;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_25 = V_0;
 		NullCheck(L_25);
-		bool L_26;
-		L_26 = SceneUnderstandingObserverProfile_get_UsePersistentObjects_mF0C462594DA7648E405C29DF199DC67C6E4911EA_inline(L_25, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_UsePersistentObjects_m484B1C42CE4607A0E36179F05DBEC9F8DE359DAA_inline(__this, L_26, /*hidden argument*/NULL);
-		// UpdateInterval = profile.UpdateInterval;
+		float L_26;
+		L_26 = BaseSpatialAwarenessObserverProfile_get_UpdateInterval_m485EC2C34EEDADF1BB44C987829CE12E39D915C5_inline(L_25, /*hidden argument*/NULL);
+		BaseSpatialObserver_set_UpdateInterval_m595EDB930E00C56F453A931AC8720E12CBA11123_inline(__this, L_26, /*hidden argument*/NULL);
+		// FirstAutoUpdateDelay = profile.FirstAutoUpdateDelay;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_27 = V_0;
 		NullCheck(L_27);
 		float L_28;
-		L_28 = BaseSpatialAwarenessObserverProfile_get_UpdateInterval_m485EC2C34EEDADF1BB44C987829CE12E39D915C5_inline(L_27, /*hidden argument*/NULL);
-		BaseSpatialObserver_set_UpdateInterval_m595EDB930E00C56F453A931AC8720E12CBA11123_inline(__this, L_28, /*hidden argument*/NULL);
-		// FirstAutoUpdateDelay = profile.FirstAutoUpdateDelay;
+		L_28 = SceneUnderstandingObserverProfile_get_FirstAutoUpdateDelay_m61F7DBA1C48F0EB3BA674D2B5085F5910CF6AB0C_inline(L_27, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_FirstAutoUpdateDelay_mE9DFA94A818030A8CE90B6BF6982D79B5E6FC7EC_inline(__this, L_28, /*hidden argument*/NULL);
+		// ShouldLoadFromFile = profile.ShouldLoadFromFile;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_29 = V_0;
 		NullCheck(L_29);
-		float L_30;
-		L_30 = SceneUnderstandingObserverProfile_get_FirstAutoUpdateDelay_m61F7DBA1C48F0EB3BA674D2B5085F5910CF6AB0C_inline(L_29, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_FirstAutoUpdateDelay_mE9DFA94A818030A8CE90B6BF6982D79B5E6FC7EC_inline(__this, L_30, /*hidden argument*/NULL);
-		// ShouldLoadFromFile = profile.ShouldLoadFromFile;
+		bool L_30;
+		L_30 = SceneUnderstandingObserverProfile_get_ShouldLoadFromFile_m48E9A489A306CB6CD50507C48EF5AC2015D68DA9_inline(L_29, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_ShouldLoadFromFile_m9271B0F79D785C4BAEF2BDDD07750043B852DD9C_inline(__this, L_30, /*hidden argument*/NULL);
+		// SerializedScene = profile.SerializedScene;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_31 = V_0;
 		NullCheck(L_31);
-		bool L_32;
-		L_32 = SceneUnderstandingObserverProfile_get_ShouldLoadFromFile_m48E9A489A306CB6CD50507C48EF5AC2015D68DA9_inline(L_31, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_ShouldLoadFromFile_m9271B0F79D785C4BAEF2BDDD07750043B852DD9C_inline(__this, L_32, /*hidden argument*/NULL);
-		// SerializedScene = profile.SerializedScene;
+		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_32;
+		L_32 = SceneUnderstandingObserverProfile_get_SerializedScene_m0697D245323F83CE2A01A8F8175688CEBAC13852_inline(L_31, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_SerializedScene_m317528CC1DE338798C90524E419DE461B99081E2(__this, L_32, /*hidden argument*/NULL);
+		// WorldMeshLevelOfDetail = profile.WorldMeshLevelOfDetail;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_33 = V_0;
 		NullCheck(L_33);
-		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_34;
-		L_34 = SceneUnderstandingObserverProfile_get_SerializedScene_m0697D245323F83CE2A01A8F8175688CEBAC13852_inline(L_33, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_SerializedScene_m317528CC1DE338798C90524E419DE461B99081E2(__this, L_34, /*hidden argument*/NULL);
-		// WorldMeshLevelOfDetail = profile.WorldMeshLevelOfDetail;
+		int32_t L_34;
+		L_34 = SceneUnderstandingObserverProfile_get_WorldMeshLevelOfDetail_m6E0CADC9E45AF3B33AC90051B4B7182338B48C18_inline(L_33, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_WorldMeshLevelOfDetail_mC8CD818AEF10D23A493A17C39A12E6780F441801_inline(__this, L_34, /*hidden argument*/NULL);
+		// InstantiationBatchRate = profile.InstantiationBatchRate;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_35 = V_0;
 		NullCheck(L_35);
 		int32_t L_36;
-		L_36 = SceneUnderstandingObserverProfile_get_WorldMeshLevelOfDetail_m6E0CADC9E45AF3B33AC90051B4B7182338B48C18_inline(L_35, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_WorldMeshLevelOfDetail_mC8CD818AEF10D23A493A17C39A12E6780F441801_inline(__this, L_36, /*hidden argument*/NULL);
-		// InstantiationBatchRate = profile.InstantiationBatchRate;
+		L_36 = SceneUnderstandingObserverProfile_get_InstantiationBatchRate_m73E496B7FD5D17C5573BB6BBCFB16B3D7CDACDC3_inline(L_35, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_InstantiationBatchRate_m7C2DBEEF94EBFD4A2D46387F8FFF675E3377F463_inline(__this, L_36, /*hidden argument*/NULL);
+		// ObservationExtents = profile.ObservationExtents;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_37 = V_0;
 		NullCheck(L_37);
-		int32_t L_38;
-		L_38 = SceneUnderstandingObserverProfile_get_InstantiationBatchRate_m73E496B7FD5D17C5573BB6BBCFB16B3D7CDACDC3_inline(L_37, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_InstantiationBatchRate_m7C2DBEEF94EBFD4A2D46387F8FFF675E3377F463_inline(__this, L_38, /*hidden argument*/NULL);
-		// ObservationExtents = profile.ObservationExtents;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_38;
+		L_38 = BaseSpatialAwarenessObserverProfile_get_ObservationExtents_mF5E3B2247663768DFCD51103392C4CA9537C9070_inline(L_37, /*hidden argument*/NULL);
+		BaseSpatialObserver_set_ObservationExtents_m93F29BC3FC832E3E26F11F7611C3108FECF9A738_inline(__this, L_38, /*hidden argument*/NULL);
+		// QueryRadius = profile.QueryRadius;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_39 = V_0;
 		NullCheck(L_39);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_40;
-		L_40 = BaseSpatialAwarenessObserverProfile_get_ObservationExtents_mF5E3B2247663768DFCD51103392C4CA9537C9070_inline(L_39, /*hidden argument*/NULL);
-		BaseSpatialObserver_set_ObservationExtents_m93F29BC3FC832E3E26F11F7611C3108FECF9A738_inline(__this, L_40, /*hidden argument*/NULL);
-		// QueryRadius = profile.QueryRadius;
+		float L_40;
+		L_40 = SceneUnderstandingObserverProfile_get_QueryRadius_m93880E066A8224F537734496845D16A1E5A78CD1_inline(L_39, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_QueryRadius_mF35914134613AB52F9E595DFE76CB6C8AF4C2E7F_inline(__this, L_40, /*hidden argument*/NULL);
+		// RequestOcclusionMask = profile.RequestOcclusionMask;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_41 = V_0;
 		NullCheck(L_41);
-		float L_42;
-		L_42 = SceneUnderstandingObserverProfile_get_QueryRadius_m93880E066A8224F537734496845D16A1E5A78CD1_inline(L_41, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_QueryRadius_mF35914134613AB52F9E595DFE76CB6C8AF4C2E7F_inline(__this, L_42, /*hidden argument*/NULL);
-		// RequestOcclusionMask = profile.RequestOcclusionMask;
+		bool L_42;
+		L_42 = SceneUnderstandingObserverProfile_get_RequestOcclusionMask_m2E3277C8A692365029B8B37130EEC502C0C3D520_inline(L_41, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_RequestOcclusionMask_m1DB323A0A007A8A441C8B4C43F5E88AFD6DC4AFA_inline(__this, L_42, /*hidden argument*/NULL);
+		// OcclusionMaskResolution = profile.OcclusionMaskResolution;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_43 = V_0;
 		NullCheck(L_43);
-		bool L_44;
-		L_44 = SceneUnderstandingObserverProfile_get_RequestOcclusionMask_m2E3277C8A692365029B8B37130EEC502C0C3D520_inline(L_43, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_RequestOcclusionMask_m1DB323A0A007A8A441C8B4C43F5E88AFD6DC4AFA_inline(__this, L_44, /*hidden argument*/NULL);
-		// OcclusionMaskResolution = profile.OcclusionMaskResolution;
+		Vector2Int_tF49F5C2443670DE126D9EC8DBE81D8F480EAA6E9  L_44;
+		L_44 = SceneUnderstandingObserverProfile_get_OcclusionMaskResolution_m7BDDCAA5B42EFBEA83DC59697AF20CF224E8F5AE_inline(L_43, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_OcclusionMaskResolution_mEE6E3535A18ABF68E934A40F07E7312A08A5FC47_inline(__this, L_44, /*hidden argument*/NULL);
+		// OrientScene = profile.OrientScene;
 		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_45 = V_0;
 		NullCheck(L_45);
-		Vector2Int_tF49F5C2443670DE126D9EC8DBE81D8F480EAA6E9  L_46;
-		L_46 = SceneUnderstandingObserverProfile_get_OcclusionMaskResolution_m7BDDCAA5B42EFBEA83DC59697AF20CF224E8F5AE_inline(L_45, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_OcclusionMaskResolution_mEE6E3535A18ABF68E934A40F07E7312A08A5FC47_inline(__this, L_46, /*hidden argument*/NULL);
-		// OrientScene = profile.OrientScene;
-		SceneUnderstandingObserverProfile_tF26FB89566845A9812C0120EF76479DCF8DD3B27 * L_47 = V_0;
-		NullCheck(L_47);
-		bool L_48;
-		L_48 = SceneUnderstandingObserverProfile_get_OrientScene_mFF3ED71CBD3D2857E977716A2B9DD8E7D90BAD8A_inline(L_47, /*hidden argument*/NULL);
-		WindowsSceneUnderstandingObserver_set_OrientScene_mE3109F800DBD429F5F66C0C4AF05D49D8789BAA8_inline(__this, L_48, /*hidden argument*/NULL);
-	}
-
-IL_0150:
-	{
+		bool L_46;
+		L_46 = SceneUnderstandingObserverProfile_get_OrientScene_mFF3ED71CBD3D2857E977716A2B9DD8E7D90BAD8A_inline(L_45, /*hidden argument*/NULL);
+		WindowsSceneUnderstandingObserver_set_OrientScene_mE3109F800DBD429F5F66C0C4AF05D49D8789BAA8_inline(__this, L_46, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -2341,16 +2315,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_Initia
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBF74DAF63DFBBFE944944E5B82F675D0B045EC0D);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (Application.isPlaying)
 		bool L_0;
 		L_0 = Application_get_isPlaying_m7BB718D8E58B807184491F64AFF0649517E56567(/*hidden argument*/NULL);
-		V_0 = L_0;
-		bool L_1 = V_0;
-		if (!L_1)
+		if (!L_0)
 		{
-			goto IL_0017;
+			goto IL_0011;
 		}
 	}
 	{
@@ -2359,7 +2330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_Initia
 		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(_stringLiteralBF74DAF63DFBBFE944944E5B82F675D0B045EC0D, /*hidden argument*/NULL);
 	}
 
-IL_0017:
+IL_0011:
 	{
 		// }
 		return;
@@ -2770,19 +2741,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_set_De
 // UnityEngine.TextAsset Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver::get_SerializedScene()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * WindowsSceneUnderstandingObserver_get_SerializedScene_m327FE744385978DB8BBF89FF3365A1B7E15F7E26 (WindowsSceneUnderstandingObserver_t594FCDE9D978D2C2EACF0D6FDD425C5C212F5BE3 * __this, const RuntimeMethod* method)
 {
-	TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * V_0 = NULL;
 	{
 		// get { return serializedScene; }
 		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_0 = __this->get_serializedScene_42();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		// get { return serializedScene; }
-		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver::set_SerializedScene(UnityEngine.TextAsset)
@@ -2794,7 +2756,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_set_Se
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (serializedScene != value)
 		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_0 = __this->get_serializedScene_42();
@@ -2802,26 +2763,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsSceneUnderstandingObserver_set_Se
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		bool L_3 = V_0;
-		if (!L_3)
+		if (!L_2)
 		{
-			goto IL_002b;
+			goto IL_0026;
 		}
 	}
 	{
 		// serializedScene = value;
-		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_4 = ___value0;
-		__this->set_serializedScene_42(L_4);
+		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_3 = ___value0;
+		__this->set_serializedScene_42(L_3);
 		// sceneBytes = serializedScene.bytes;
-		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_5 = __this->get_serializedScene_42();
-		NullCheck(L_5);
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_6;
-		L_6 = TextAsset_get_bytes_m5F15438DABBBAAF7434D53B6778A97A498C1940F(L_5, /*hidden argument*/NULL);
-		__this->set_sceneBytes_41(L_6);
+		TextAsset_t1969F5FD1F628C7C0A70D9605C0D251B4F547234 * L_4 = __this->get_serializedScene_42();
+		NullCheck(L_4);
+		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_5;
+		L_5 = TextAsset_get_bytes_m5F15438DABBBAAF7434D53B6778A97A498C1940F(L_4, /*hidden argument*/NULL);
+		__this->set_sceneBytes_41(L_5);
 	}
 
-IL_002b:
+IL_0026:
 	{
 		// }
 		return;
@@ -2830,28 +2789,18 @@ IL_002b:
 // System.Boolean Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver::TryGetOcclusionMask(System.Int32,System.UInt16,System.UInt16,System.Byte[]&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsSceneUnderstandingObserver_TryGetOcclusionMask_mFEC767E0AA8F12D4BB6BCC0FA904498C7CD630B7 (WindowsSceneUnderstandingObserver_t594FCDE9D978D2C2EACF0D6FDD425C5C212F5BE3 * __this, int32_t ___quadId0, uint16_t ___textureWidth1, uint16_t ___textureHeight2, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726** ___mask3, const RuntimeMethod* method)
 {
-	bool V_0 = false;
 	{
 		// mask = null;
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726** L_0 = ___mask3;
 		*((RuntimeObject **)L_0) = (RuntimeObject *)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject **)L_0, (void*)(RuntimeObject *)NULL);
 		// return false;
-		V_0 = (bool)0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		// }
-		bool L_1 = V_0;
-		return L_1;
+		return (bool)0;
 	}
 }
 // System.Boolean Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver::TryFindCentermostPlacement(System.Int32,UnityEngine.Vector2,UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsSceneUnderstandingObserver_TryFindCentermostPlacement_m5E9C5B42390DD6825E0760A89C0FE572AB9C76A0 (WindowsSceneUnderstandingObserver_t594FCDE9D978D2C2EACF0D6FDD425C5C212F5BE3 * __this, int32_t ___quadId0, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___objExtents1, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___placementPosOnQuad2, const RuntimeMethod* method)
 {
-	bool V_0 = false;
 	{
 		// placementPosOnQuad = Vector3.zero;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_0 = ___placementPosOnQuad2;
@@ -2859,15 +2808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsSceneUnderstandingObserver_TryFin
 		L_1 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
 		*(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)L_0 = L_1;
 		// return false;
-		V_0 = (bool)0;
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return (bool)0;
 	}
 }
 #ifdef __clang__

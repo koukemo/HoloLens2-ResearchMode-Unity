@@ -787,7 +787,7 @@ static void Microsoft_MixedReality_Toolkit_Providers_XRSDK_WindowsMixedReality_C
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
 	}
 }
 static void HPMotionController_t8D7991733B4C20BE31145CF81CB6663DB3F4C501_CustomAttributesCacheGenerator(CustomAttributesCache* cache)

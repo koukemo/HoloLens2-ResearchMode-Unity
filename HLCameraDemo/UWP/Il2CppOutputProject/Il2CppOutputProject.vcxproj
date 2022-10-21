@@ -452,6 +452,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics51.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics52.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics7.cpp">
@@ -598,13 +600,7 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs138.cpp">
     </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs139.cpp">
-    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs14.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs140.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs141.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs15.cpp">
     </ClCompile>
@@ -928,6 +924,10 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions157.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions158.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions159.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions16.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions17.cpp">
@@ -1168,8 +1168,6 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK7.cpp">
     </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK8.cpp">
-    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.CameraSystem.cpp">
@@ -1213,10 +1211,6 @@
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit3.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit4.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit5.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit_Attr.cpp">
     </ClCompile>
@@ -1536,10 +1530,6 @@
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem7.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem8.cpp">
-    </ClCompile>
-    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem9.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem_Attr.cpp">
     </ClCompile>
@@ -5196,7 +5186,7 @@
     <ProjectGuid>{EA17D85E-DA6F-49EA-A879-8F48265B121D}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <ApplicationType>Windows Store</ApplicationType>
-    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>

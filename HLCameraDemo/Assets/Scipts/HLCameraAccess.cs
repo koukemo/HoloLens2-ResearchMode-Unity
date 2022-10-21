@@ -10,6 +10,11 @@ public class HLCameraAccess: MonoBehaviour
     {
         PhotoCapture.CreateAsync(false, OnPhotoCaptureCreated);
     }
+
+    void FixedUpdate() {
+        PhotoCapture.CreateAsync(false, OnPhotoCaptureCreated);
+    }
+
     void OnPhotoCaptureCreated(PhotoCapture captureObject)
     {
         photoCaptureObject = captureObject;
@@ -51,7 +56,7 @@ public class HLCameraAccess: MonoBehaviour
             // テクスチャが適用されるゲームオブジェクトを作成
             GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
             Renderer quadRenderer = quad.GetComponent<Renderer>() as Renderer;
-            quadRenderer.material = new Material(Shader.Find("Custom/Unlit/UnlitTexture"));
+            quadRenderer.material = new Material(Shader.Find("Unlit/Texture"));
 
             quad.transform.parent = this.transform;
             quad.transform.localPosition = new Vector3(0.0f, 0.0f, 5.0f);
@@ -60,7 +65,7 @@ public class HLCameraAccess: MonoBehaviour
         }
 
         // カメラを非アクティブにします
-        photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
+        //photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
     }
 
     void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)

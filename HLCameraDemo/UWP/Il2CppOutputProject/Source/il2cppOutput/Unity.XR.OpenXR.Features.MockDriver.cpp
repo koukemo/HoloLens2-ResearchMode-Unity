@@ -1527,23 +1527,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockDriver_ReceiveScriptEvent_mB16599688
 		if (L_1)
 		{
 			G_B2_0 = L_1;
-			goto IL_000b;
+			goto IL_000a;
 		}
 	}
 	{
-		goto IL_0013;
+		return;
 	}
 
-IL_000b:
+IL_000a:
 	{
 		int32_t L_2 = ___evt0;
 		uint64_t L_3 = ___param1;
 		NullCheck(G_B2_0);
 		ScriptEventDelegate_Invoke_m216B57E059844D84AEB44811B133A54A8A835DA5(G_B2_0, L_2, L_3, /*hidden argument*/NULL);
-	}
-
-IL_0013:
-	{
 		return;
 	}
 }
@@ -1576,17 +1572,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MockDriver_OnInstanceCreate_m0176A3A6B56
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BFAF67BC1D43F33C94D76E23C8F313BD41DDBFF);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	bool V_1 = false;
 	{
 		// if (!OpenXRRuntime.IsExtensionEnabled("XR_UNITY_mock_driver"))
 		bool L_0;
 		L_0 = OpenXRRuntime_IsExtensionEnabled_mC740857A4DF035AF82C46FDC30CE145E7C6C581F(_stringLiteral3BFAF67BC1D43F33C94D76E23C8F313BD41DDBFF, /*hidden argument*/NULL);
-		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
+		if (L_0)
 		{
-			goto IL_0022;
+			goto IL_0018;
 		}
 	}
 	{
@@ -1594,33 +1586,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MockDriver_OnInstanceCreate_m0176A3A6B56
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(_stringLiteral1FDC7B050699D12543255FBE775FDDC07F9A1BF3, /*hidden argument*/NULL);
 		// return false;
-		V_1 = (bool)0;
-		goto IL_0048;
+		return (bool)0;
 	}
 
-IL_0022:
+IL_0018:
 	{
 		// InitializeNative(xrGetInstanceProcAddr, instance, 0ul, 0ul);
-		intptr_t L_2;
-		L_2 = OpenXRFeature_get_xrGetInstanceProcAddr_mCE13D33E6318D9E8F79E3B5854B0F3E6C28BD6A0(/*hidden argument*/NULL);
-		uint64_t L_3 = ___instance0;
-		intptr_t L_4;
-		L_4 = MockDriver_InitializeNative_mC501DAEF723078EAF3DD5D03822DBEEE9779A537((intptr_t)L_2, L_3, ((int64_t)((int64_t)0)), ((int64_t)((int64_t)0)), /*hidden argument*/NULL);
+		intptr_t L_1;
+		L_1 = OpenXRFeature_get_xrGetInstanceProcAddr_mCE13D33E6318D9E8F79E3B5854B0F3E6C28BD6A0(/*hidden argument*/NULL);
+		uint64_t L_2 = ___instance0;
+		intptr_t L_3;
+		L_3 = MockDriver_InitializeNative_mC501DAEF723078EAF3DD5D03822DBEEE9779A537((intptr_t)L_1, L_2, ((int64_t)((int64_t)0)), ((int64_t)((int64_t)0)), /*hidden argument*/NULL);
 		// MockDriver_RegisterScriptEventCallback(ReceiveScriptEvent);
-		ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF * L_5 = (ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF *)il2cpp_codegen_object_new(ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF_il2cpp_TypeInfo_var);
-		ScriptEventDelegate__ctor_mC1611BAEB62F55C7EA653372F38301AD0067D6E1(L_5, NULL, (intptr_t)((intptr_t)MockDriver_ReceiveScriptEvent_mB16599688141C2AE802A35DE7BBC274BF778161A_RuntimeMethod_var), /*hidden argument*/NULL);
-		int32_t L_6;
-		L_6 = MockDriver_MockDriver_RegisterScriptEventCallback_mB737E196892BA358B07EDBEE01DBF91442F727AD(L_5, /*hidden argument*/NULL);
+		ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF * L_4 = (ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF *)il2cpp_codegen_object_new(ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF_il2cpp_TypeInfo_var);
+		ScriptEventDelegate__ctor_mC1611BAEB62F55C7EA653372F38301AD0067D6E1(L_4, NULL, (intptr_t)((intptr_t)MockDriver_ReceiveScriptEvent_mB16599688141C2AE802A35DE7BBC274BF778161A_RuntimeMethod_var), /*hidden argument*/NULL);
+		int32_t L_5;
+		L_5 = MockDriver_MockDriver_RegisterScriptEventCallback_mB737E196892BA358B07EDBEE01DBF91442F727AD(L_4, /*hidden argument*/NULL);
 		// return true;
-		V_1 = (bool)1;
-		goto IL_0048;
-	}
-
-IL_0048:
-	{
-		// }
-		bool L_7 = V_1;
-		return L_7;
+		return (bool)1;
 	}
 }
 // System.Void UnityEngine.XR.OpenXR.Features.Mock.MockDriver::OnInstanceDestroy(System.UInt64)
@@ -1967,7 +1950,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockDriver__ctor_m40E6EFD71A973E8CDAFE73
 IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF (ScriptEventDelegate_tD479F8F0EA414C9AE94C5EBAE00960A1134667EF * __this, int32_t ___evt0, uint64_t ___param1, const RuntimeMethod* method)
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc)(int32_t, uint64_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((RuntimeDelegate*)__this)->method->nativeFunction);
 
 	// Native function invocation
 	il2cppPInvokeFunc(___evt0, ___param1);

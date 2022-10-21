@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ros_connector: {fileID: 910327899}
+  ros_connector_button_controller: {fileID: 1554885252}
   publish_controller: {fileID: 1832418399}
 --- !u!4 &418321363
 Transform:
@@ -344,9 +345,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1643859881}
-  - {fileID: 1832418400}
+  m_Children: []
   m_Father: {fileID: 1417954164}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -440,7 +439,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 1
   protocol: 0
-  RosBridgeServerUrl: ws://10.40.0.163:9090
+  RosBridgeServerUrl: ws://192.168.11.12:9090
 --- !u!4 &910327901
 Transform:
   m_ObjectHideFlags: 0
@@ -462,13 +461,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910327899}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af29ccab5db931c48899a59cb2d772e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: /HL2/Compressed
-  ImageCamera: {fileID: 794155256}
   FrameId: HLCamera
   resolutionWidth: 640
   resolutionHeight: 480
@@ -574,7 +572,7 @@ PrefabInstance:
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.52
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
@@ -735,7 +733,7 @@ PrefabInstance:
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
@@ -750,7 +748,7 @@ PrefabInstance:
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.12399998
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7534510047488536407, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
         type: 3}
@@ -794,6 +792,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6, type: 3}
+--- !u!1 &1554885252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7534510045860620726, guid: 8d9a1a91bd8236b49be2be0a78fcf5e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1554885251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1643859880
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,13 +821,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643859880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1341873962}
-  m_Father: {fileID: 794155257}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1832418399
 GameObject:
@@ -849,12 +853,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832418399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.396}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 930691942}
-  m_Father: {fileID: 794155257}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050916976
 GameObject:

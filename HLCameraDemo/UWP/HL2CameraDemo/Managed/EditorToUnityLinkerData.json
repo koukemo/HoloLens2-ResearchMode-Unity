@@ -578,7 +578,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "HL2CameraPublisher",
+            "fullManagedTypeName": "RosSharp.RosBridgeClient.HL2CameraPublisher",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -758,13 +758,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile",
@@ -824,13 +817,6 @@
             "managedAssemblyName": "Microsoft.MixedReality.Toolkit.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerVisualizationProfile",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Microsoft.MixedReality.Toolkit.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Microsoft.MixedReality.Toolkit.Input.MixedRealityEyeTrackingProfile",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -2032,6 +2018,12 @@
             "module": "Editor",
             "baseName": "NamedObject",
             "baseModule": "Core"
+        },
+        {
+            "name": "AndroidAssetPackImporter",
+            "module": "Editor",
+            "baseName": "AssetImporter",
+            "baseModule": "Editor"
         },
         {
             "name": "AssemblyDefinitionImporter",

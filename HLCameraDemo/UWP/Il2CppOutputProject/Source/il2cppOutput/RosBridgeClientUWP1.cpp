@@ -13194,27 +13194,44 @@ struct XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5  : public XContainer_t
 {
 public:
 	// System.Xml.Linq.XName System.Xml.Linq.XElement::name
-	XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * ___name_4;
+	XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * ___name_5;
 	// System.Xml.Linq.XAttribute System.Xml.Linq.XElement::lastAttr
-	XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * ___lastAttr_5;
+	XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * ___lastAttr_6;
 
 public:
-	inline static int32_t get_offset_of_name_4() { return static_cast<int32_t>(offsetof(XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5, ___name_4)); }
-	inline XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * get_name_4() const { return ___name_4; }
-	inline XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 ** get_address_of_name_4() { return &___name_4; }
-	inline void set_name_4(XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * value)
+	inline static int32_t get_offset_of_name_5() { return static_cast<int32_t>(offsetof(XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5, ___name_5)); }
+	inline XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * get_name_5() const { return ___name_5; }
+	inline XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 ** get_address_of_name_5() { return &___name_5; }
+	inline void set_name_5(XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * value)
 	{
-		___name_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___name_4), (void*)value);
+		___name_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___name_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_lastAttr_5() { return static_cast<int32_t>(offsetof(XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5, ___lastAttr_5)); }
-	inline XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * get_lastAttr_5() const { return ___lastAttr_5; }
-	inline XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 ** get_address_of_lastAttr_5() { return &___lastAttr_5; }
-	inline void set_lastAttr_5(XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * value)
+	inline static int32_t get_offset_of_lastAttr_6() { return static_cast<int32_t>(offsetof(XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5, ___lastAttr_6)); }
+	inline XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * get_lastAttr_6() const { return ___lastAttr_6; }
+	inline XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 ** get_address_of_lastAttr_6() { return &___lastAttr_6; }
+	inline void set_lastAttr_6(XAttribute_tA0B67912BA9E7D6A4BF473F1AAA93F2F4C93ECB7 * value)
 	{
-		___lastAttr_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___lastAttr_5), (void*)value);
+		___lastAttr_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___lastAttr_6), (void*)value);
+	}
+};
+
+struct XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5_StaticFields
+{
+public:
+	// System.Collections.Generic.IEnumerable`1<System.Xml.Linq.XElement> System.Xml.Linq.XElement::emptySequence
+	RuntimeObject* ___emptySequence_4;
+
+public:
+	inline static int32_t get_offset_of_emptySequence_4() { return static_cast<int32_t>(offsetof(XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5_StaticFields, ___emptySequence_4)); }
+	inline RuntimeObject* get_emptySequence_4() const { return ___emptySequence_4; }
+	inline RuntimeObject** get_address_of_emptySequence_4() { return &___emptySequence_4; }
+	inline void set_emptySequence_4(RuntimeObject* value)
+	{
+		___emptySequence_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___emptySequence_4), (void*)value);
 	}
 };
 
@@ -36575,7 +36592,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdatePointcloudOctomapRespo
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * XElement_get_Name_m1154DCAA063C86BB056B2A49FF9C4FA65CEEAD3D_inline (XElement_tB23449727DAFDA30624A9E24F99731430F9CC8A5 * __this, const RuntimeMethod* method)
 {
 	{
-		XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * L_0 = __this->get_name_4();
+		XName_t03F670C1FC8B039AC94EB7B0BAE881E6E3545956 * L_0 = __this->get_name_5();
 		return L_0;
 	}
 }
