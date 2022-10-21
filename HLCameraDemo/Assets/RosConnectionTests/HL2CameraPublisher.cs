@@ -50,7 +50,7 @@ namespace RosSharp.RosBridgeClient
             for (int i = 0; i < devices.Length; i++)
                 Debug.Log(devices[i].name);
             //start webcam feed
-            webcam = new WebCamTexture(devices[3].name);
+            webcam = new WebCamTexture(devices[0].name);
             webcam.Play();
             Debug.LogFormat("webcam: {0} {1} x {2}", webcam.deviceName, webcam.width, webcam.height);
             webcamImage = new Texture2D(webcam.width, webcam.height);

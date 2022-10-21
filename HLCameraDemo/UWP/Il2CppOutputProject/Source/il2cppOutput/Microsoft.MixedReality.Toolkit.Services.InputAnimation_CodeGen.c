@@ -108,187 +108,189 @@ extern void RayCurves__ctor_m6B5E5B505F7A60B975EC6BE76D36E7145230B958 (void);
 extern void U3CU3Ec__DisplayClass50_0__ctor_m9307C8A0B30C2B5E1A67C53BD73644B43E85EEDE (void);
 // 0x00000030 Microsoft.MixedReality.Toolkit.Input.InputAnimation Microsoft.MixedReality.Toolkit.Input.InputAnimation/<>c__DisplayClass50_0::<FromStreamAsync>b__0()
 extern void U3CU3Ec__DisplayClass50_0_U3CFromStreamAsyncU3Eb__0_mCA8652CFD02F2DEAC4C03D654D917F7BD8FB898D (void);
-// 0x00000031 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<FromStreamAsync>d__50::MoveNext()
+// 0x00000031 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<FromStreamAsync>d__50::.ctor()
+extern void U3CFromStreamAsyncU3Ed__50__ctor_m8C33304AC99831A1942A26EC456999B9837CAC56 (void);
+// 0x00000032 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<FromStreamAsync>d__50::MoveNext()
 extern void U3CFromStreamAsyncU3Ed__50_MoveNext_m9CEBD203C4A893138FAE7CE745BE8D8FBEC6AFAC (void);
-// 0x00000032 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<FromStreamAsync>d__50::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000033 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<FromStreamAsync>d__50::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CFromStreamAsyncU3Ed__50_SetStateMachine_mE24194826612C172D23BF3DEFB86A5CD2AAEC164 (void);
-// 0x00000033 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::.ctor(System.Int32)
+// 0x00000034 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::.ctor(System.Int32)
 extern void U3CGetAllAnimationCurvesU3Ed__60__ctor_m07DDAD234100D6B55213BB5CE9BD361D0501BF22 (void);
-// 0x00000034 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.IDisposable.Dispose()
+// 0x00000035 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.IDisposable.Dispose()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_IDisposable_Dispose_m18BBD68682EC79BEB1FA11DC041B0DD2B2F24459 (void);
-// 0x00000035 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::MoveNext()
+// 0x00000036 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::MoveNext()
 extern void U3CGetAllAnimationCurvesU3Ed__60_MoveNext_m13D8ECD3889823AE7982F3E67D54BC4FAF5B552A (void);
-// 0x00000036 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::<>m__Finally1()
+// 0x00000037 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::<>m__Finally1()
 extern void U3CGetAllAnimationCurvesU3Ed__60_U3CU3Em__Finally1_m1FEDD9A8B4391A5E98297F17B023BAA189753D7F (void);
-// 0x00000037 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::<>m__Finally2()
+// 0x00000038 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::<>m__Finally2()
 extern void U3CGetAllAnimationCurvesU3Ed__60_U3CU3Em__Finally2_mF86439DFD02659E5DFF5A2B7A760DFD8F76601D2 (void);
-// 0x00000038 UnityEngine.AnimationCurve Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.Generic.IEnumerator<UnityEngine.AnimationCurve>.get_Current()
+// 0x00000039 UnityEngine.AnimationCurve Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.Generic.IEnumerator<UnityEngine.AnimationCurve>.get_Current()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_Collections_Generic_IEnumeratorU3CUnityEngine_AnimationCurveU3E_get_Current_mAB8E76EB9D29EB054F9D233B6944B2C78CE08133 (void);
-// 0x00000039 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerator.Reset()
+// 0x0000003A System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerator.Reset()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_Collections_IEnumerator_Reset_m36EB10FC3F960C1139BDDED85B7CF563D4707A82 (void);
-// 0x0000003A System.Object Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerator.get_Current()
+// 0x0000003B System.Object Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerator.get_Current()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_Collections_IEnumerator_get_Current_mEC2DDF9AE9D691A606AAFABB110B86CE01D05C89 (void);
-// 0x0000003B System.Collections.Generic.IEnumerator`1<UnityEngine.AnimationCurve> Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.Generic.IEnumerable<UnityEngine.AnimationCurve>.GetEnumerator()
+// 0x0000003C System.Collections.Generic.IEnumerator`1<UnityEngine.AnimationCurve> Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.Generic.IEnumerable<UnityEngine.AnimationCurve>.GetEnumerator()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_Collections_Generic_IEnumerableU3CUnityEngine_AnimationCurveU3E_GetEnumerator_m7D58C802D0F700C17DF12DE1064D39513A21F806 (void);
-// 0x0000003C System.Collections.IEnumerator Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerable.GetEnumerator()
+// 0x0000003D System.Collections.IEnumerator Microsoft.MixedReality.Toolkit.Input.InputAnimation/<GetAllAnimationCurves>d__60::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CGetAllAnimationCurvesU3Ed__60_System_Collections_IEnumerable_GetEnumerator_m104D97E1ABED55279CBB5B115BC967F611CCA2A7 (void);
-// 0x0000003D System.String Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::GetOutputFilename(System.String,System.Boolean)
+// 0x0000003E System.String Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::GetOutputFilename(System.String,System.Boolean)
 extern void InputAnimationSerializationUtils_GetOutputFilename_m3D2FE98D8F34FD133CD06ECDCACDA698A54302C7 (void);
-// 0x0000003E System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteHeader(System.IO.BinaryWriter)
+// 0x0000003F System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteHeader(System.IO.BinaryWriter)
 extern void InputAnimationSerializationUtils_WriteHeader_mBD9FFA16D2E0EE3CD72C9FDE89619DC6F5A4FBC6 (void);
-// 0x0000003F System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadHeader(System.IO.BinaryReader,System.Int32&,System.Int32&)
+// 0x00000040 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadHeader(System.IO.BinaryReader,System.Int32&,System.Int32&)
 extern void InputAnimationSerializationUtils_ReadHeader_mD6A04D247F935A880FBFC506C3F3496E054AF66E (void);
-// 0x00000040 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadFloatCurve(System.IO.BinaryReader,UnityEngine.AnimationCurve)
+// 0x00000041 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadFloatCurve(System.IO.BinaryReader,UnityEngine.AnimationCurve)
 extern void InputAnimationSerializationUtils_ReadFloatCurve_mAE6393871E98641F773E1DCC3E7234D6C57AD02C (void);
-// 0x00000041 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteBoolCurve(System.IO.BinaryWriter,UnityEngine.AnimationCurve,System.Single)
+// 0x00000042 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteBoolCurve(System.IO.BinaryWriter,UnityEngine.AnimationCurve,System.Single)
 extern void InputAnimationSerializationUtils_WriteBoolCurve_m15A0CF2FCE96FB6CB6BB2DD265A0C9B8BB9726F7 (void);
-// 0x00000042 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadBoolCurve(System.IO.BinaryReader,UnityEngine.AnimationCurve)
+// 0x00000043 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadBoolCurve(System.IO.BinaryReader,UnityEngine.AnimationCurve)
 extern void InputAnimationSerializationUtils_ReadBoolCurve_m085FFC6E15B09C8E7648FF91356151F7FA006240 (void);
-// 0x00000043 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteFloatCurveSimple(System.IO.BinaryWriter,UnityEngine.AnimationCurve,System.Single)
+// 0x00000044 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteFloatCurveSimple(System.IO.BinaryWriter,UnityEngine.AnimationCurve,System.Single)
 extern void InputAnimationSerializationUtils_WriteFloatCurveSimple_m6E070EBD2AF41C142BF139047F40ED577F5CD763 (void);
-// 0x00000044 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadFloatCurveSimple(System.IO.BinaryReader,UnityEngine.AnimationCurve)
+// 0x00000045 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadFloatCurveSimple(System.IO.BinaryReader,UnityEngine.AnimationCurve)
 extern void InputAnimationSerializationUtils_ReadFloatCurveSimple_m2DB3EA2BCC35088D91687D5090BCF18F02E32431 (void);
-// 0x00000045 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteMarkerList(System.IO.BinaryWriter,System.Collections.Generic.List`1<Microsoft.MixedReality.Toolkit.Input.InputAnimationMarker>,System.Single)
+// 0x00000046 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::WriteMarkerList(System.IO.BinaryWriter,System.Collections.Generic.List`1<Microsoft.MixedReality.Toolkit.Input.InputAnimationMarker>,System.Single)
 extern void InputAnimationSerializationUtils_WriteMarkerList_m89DD412E5D301D7EE4194A217BE5FEA2E40C733F (void);
-// 0x00000046 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadMarkerList(System.IO.BinaryReader,System.Collections.Generic.List`1<Microsoft.MixedReality.Toolkit.Input.InputAnimationMarker>)
+// 0x00000047 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::ReadMarkerList(System.IO.BinaryReader,System.Collections.Generic.List`1<Microsoft.MixedReality.Toolkit.Input.InputAnimationMarker>)
 extern void InputAnimationSerializationUtils_ReadMarkerList_m30B0FE2E589012E1705B773388E6DAFE6D7E852C (void);
-// 0x00000047 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::.cctor()
+// 0x00000048 System.Void Microsoft.MixedReality.Toolkit.Input.InputAnimationSerializationUtils::.cctor()
 extern void InputAnimationSerializationUtils__cctor_mEEA9832E28C0012A7B54FDFAB2D732AE649A00BD (void);
-// 0x00000048 System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::get_StartTime()
+// 0x00000049 System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::get_StartTime()
 extern void InputRecordingBuffer_get_StartTime_m3352753447E86DC9C0C9FBF5D668781AEC63FA78 (void);
-// 0x00000049 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::.ctor()
+// 0x0000004A System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::.ctor()
 extern void InputRecordingBuffer__ctor_m71EFC81CFA6AA9548A80AEF42522D2E6897F392C (void);
-// 0x0000004A System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::Clear()
+// 0x0000004B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::Clear()
 extern void InputRecordingBuffer_Clear_m6EF61E54A3AB9A96F6C071E6DFDA1875F5CA47FB (void);
-// 0x0000004B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::RemoveBeforeTime(System.Single)
+// 0x0000004C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::RemoveBeforeTime(System.Single)
 extern void InputRecordingBuffer_RemoveBeforeTime_m0C6E71F62E8B91462AA5552F4B1F2865C5BE450F (void);
-// 0x0000004C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetCameraPose(Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
+// 0x0000004D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetCameraPose(Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
 extern void InputRecordingBuffer_SetCameraPose_mFCB55F38E6817458876440816F17CC3C1EB4D6AB (void);
-// 0x0000004D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetGazeRay(UnityEngine.Ray)
+// 0x0000004E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetGazeRay(UnityEngine.Ray)
 extern void InputRecordingBuffer_SetGazeRay_m10272880F153255CC6DAE81925119175D764C3C3 (void);
-// 0x0000004E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetHandState(Microsoft.MixedReality.Toolkit.Utilities.Handedness,System.Boolean,System.Boolean)
+// 0x0000004F System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetHandState(Microsoft.MixedReality.Toolkit.Utilities.Handedness,System.Boolean,System.Boolean)
 extern void InputRecordingBuffer_SetHandState_m535C643CC8365C86B17E0F5851B9CEAB4145BCDB (void);
-// 0x0000004F System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetJointPose(Microsoft.MixedReality.Toolkit.Utilities.Handedness,Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
+// 0x00000050 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::SetJointPose(Microsoft.MixedReality.Toolkit.Utilities.Handedness,Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
 extern void InputRecordingBuffer_SetJointPose_m0F213AE56C8C8F8C6216E829C88B246F2D512DF2 (void);
-// 0x00000050 System.Int32 Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::NewKeyframe(System.Single)
+// 0x00000051 System.Int32 Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::NewKeyframe(System.Single)
 extern void InputRecordingBuffer_NewKeyframe_mFE7FC5772D9967EAB88AA5B762F2A5713CA25219 (void);
-// 0x00000051 System.Collections.Generic.IEnumerator`1<Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::GetEnumerator()
+// 0x00000052 System.Collections.Generic.IEnumerator`1<Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::GetEnumerator()
 extern void InputRecordingBuffer_GetEnumerator_m2AB791EA1C66FA0DB04242DA0D062B53A520472E (void);
-// 0x00000052 System.Collections.IEnumerator Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::System.Collections.IEnumerable.GetEnumerator()
+// 0x00000053 System.Collections.IEnumerator Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer::System.Collections.IEnumerable.GetEnumerator()
 extern void InputRecordingBuffer_System_Collections_IEnumerable_GetEnumerator_m8FCF1FF00B2216C76A0597CA7046567F61A3E220 (void);
-// 0x00000053 System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_Time()
+// 0x00000054 System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_Time()
 extern void Keyframe_get_Time_mA05D121FA2658A8A2C65307A5FE7F95518D4DDDA (void);
-// 0x00000054 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_Time(System.Single)
+// 0x00000055 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_Time(System.Single)
 extern void Keyframe_set_Time_mA0E61576B73CE605C55A9FAA5B5AB1AD9405FE03 (void);
-// 0x00000055 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftTracked()
+// 0x00000056 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftTracked()
 extern void Keyframe_get_LeftTracked_m06A036923EED4E646B10D9EF8295828572A9F04B (void);
-// 0x00000056 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftTracked(System.Boolean)
+// 0x00000057 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftTracked(System.Boolean)
 extern void Keyframe_set_LeftTracked_mA7012EE3B00277F37646D2EFFD6E58B89ED22C12 (void);
-// 0x00000057 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightTracked()
+// 0x00000058 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightTracked()
 extern void Keyframe_get_RightTracked_mA19B3CB09A5A298D8984AF70938194E77B57F4BC (void);
-// 0x00000058 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightTracked(System.Boolean)
+// 0x00000059 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightTracked(System.Boolean)
 extern void Keyframe_set_RightTracked_m2DDA779BE3AB10359A1139B303D9E1687EF2A91A (void);
-// 0x00000059 System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftPinch()
+// 0x0000005A System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftPinch()
 extern void Keyframe_get_LeftPinch_m435C11D6968B044F42A375EE28AF3020AD9091DE (void);
-// 0x0000005A System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftPinch(System.Boolean)
+// 0x0000005B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftPinch(System.Boolean)
 extern void Keyframe_set_LeftPinch_m7DE1DB8481149DB1A6F4FD05E1CFA51EFC0D223C (void);
-// 0x0000005B System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightPinch()
+// 0x0000005C System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightPinch()
 extern void Keyframe_get_RightPinch_mF6869CC9BC0751EFE2B3B527318ACD483E997386 (void);
-// 0x0000005C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightPinch(System.Boolean)
+// 0x0000005D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightPinch(System.Boolean)
 extern void Keyframe_set_RightPinch_mCD64D00BD5EE182D2DA2F0C3A8893EFD4FCCA219 (void);
-// 0x0000005D Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_CameraPose()
+// 0x0000005E Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_CameraPose()
 extern void Keyframe_get_CameraPose_mF080ABD993EE172F211C241D25B110A85EF9FD41 (void);
-// 0x0000005E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_CameraPose(Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
+// 0x0000005F System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_CameraPose(Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose)
 extern void Keyframe_set_CameraPose_mA7F77373E5B5A27F781CC58234DA8E66C482C7DD (void);
-// 0x0000005F UnityEngine.Ray Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_GazeRay()
+// 0x00000060 UnityEngine.Ray Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_GazeRay()
 extern void Keyframe_get_GazeRay_m655743341B0DB5FD8AC0337E45D5A47698FEE0EA (void);
-// 0x00000060 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_GazeRay(UnityEngine.Ray)
+// 0x00000061 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_GazeRay(UnityEngine.Ray)
 extern void Keyframe_set_GazeRay_m9CA5738D5E4A5423FE33D2971A0F096DF0E2A7F6 (void);
-// 0x00000061 System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftJoints()
+// 0x00000062 System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_LeftJoints()
 extern void Keyframe_get_LeftJoints_m82B2A30643E9897737F81EF37C7601C4C6018816 (void);
-// 0x00000062 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftJoints(System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose>)
+// 0x00000063 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_LeftJoints(System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose>)
 extern void Keyframe_set_LeftJoints_mBCA7CCA1A68A724C3171365638C5D26B12BEDB11 (void);
-// 0x00000063 System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightJoints()
+// 0x00000064 System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose> Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::get_RightJoints()
 extern void Keyframe_get_RightJoints_mDBD54F5919D9FFE32E616059DA0198099C686006 (void);
-// 0x00000064 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightJoints(System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose>)
+// 0x00000065 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::set_RightJoints(System.Collections.Generic.Dictionary`2<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose>)
 extern void Keyframe_set_RightJoints_mC5C6E03184499B6524886D6081CF9B5BD7FF4AFD (void);
-// 0x00000065 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::.ctor(System.Single)
+// 0x00000066 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingBuffer/Keyframe::.ctor(System.Single)
 extern void Keyframe__ctor_m8C29A9724CF8FE98D008BAD7AB0310D6E40CEA1A (void);
-// 0x00000066 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::add_OnRecordingStarted(System.Action)
+// 0x00000067 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::add_OnRecordingStarted(System.Action)
 extern void InputRecordingService_add_OnRecordingStarted_m84BED90BBCDFB785AB20FB82E18D9F255E534894 (void);
-// 0x00000067 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::remove_OnRecordingStarted(System.Action)
+// 0x00000068 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::remove_OnRecordingStarted(System.Action)
 extern void InputRecordingService_remove_OnRecordingStarted_m4D5AE4D484DC02C3191F723A74AE687A72DE7476 (void);
-// 0x00000068 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::add_OnRecordingStopped(System.Action)
+// 0x00000069 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::add_OnRecordingStopped(System.Action)
 extern void InputRecordingService_add_OnRecordingStopped_m252A29DCEB3C69DDE23CFE502E7DFB65CFA4A9BF (void);
-// 0x00000069 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::remove_OnRecordingStopped(System.Action)
+// 0x0000006A System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::remove_OnRecordingStopped(System.Action)
 extern void InputRecordingService_remove_OnRecordingStopped_m9EF4B3AFD29E9772862E70CBF4649926B0A9B657 (void);
-// 0x0000006A System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_IsRecording()
+// 0x0000006B System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_IsRecording()
 extern void InputRecordingService_get_IsRecording_m6B36789EE3D2F8DDAEE0E13FF83A9BE7BAE74FAE (void);
-// 0x0000006B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_IsRecording(System.Boolean)
+// 0x0000006C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_IsRecording(System.Boolean)
 extern void InputRecordingService_set_IsRecording_m040D1B2E017C00DB07A388C900E25C34C1FA3C80 (void);
-// 0x0000006C System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_UseBufferTimeLimit()
+// 0x0000006D System.Boolean Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_UseBufferTimeLimit()
 extern void InputRecordingService_get_UseBufferTimeLimit_m4042E68CF548455A697C39ABB07DCD491FD11EC7 (void);
-// 0x0000006D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_UseBufferTimeLimit(System.Boolean)
+// 0x0000006E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_UseBufferTimeLimit(System.Boolean)
 extern void InputRecordingService_set_UseBufferTimeLimit_mCEBE3995FFC8F02DE7D6983EDB0A91A7FE8AB73B (void);
-// 0x0000006E System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_StartTime()
+// 0x0000006F System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_StartTime()
 extern void InputRecordingService_get_StartTime_mCF3448ECC51DF3103BAA6E93289F9C17A83E011D (void);
-// 0x0000006F System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_EndTime()
+// 0x00000070 System.Single Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_EndTime()
 extern void InputRecordingService_get_EndTime_mB3DC5B15E5C740E44A8CDAE882D1636B5083B4E5 (void);
-// 0x00000070 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_EndTime(System.Single)
+// 0x00000071 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::set_EndTime(System.Single)
 extern void InputRecordingService_set_EndTime_mA217B0B7F035D4B0A479D43AEE295CBCB1169370 (void);
-// 0x00000071 Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_InputRecordingProfile()
+// 0x00000072 Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile Microsoft.MixedReality.Toolkit.Input.InputRecordingService::get_InputRecordingProfile()
 extern void InputRecordingService_get_InputRecordingProfile_m1F8BE909EBD3849421D2F6C76FCA44E932D9793E (void);
-// 0x00000072 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::Enable()
+// 0x00000073 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::Enable()
 extern void InputRecordingService_Enable_mF17ECAE45E3503F21D7E67AD1A137A2559F33950 (void);
-// 0x00000073 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::Disable()
+// 0x00000074 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::Disable()
 extern void InputRecordingService_Disable_m3F0D85350FCA33E87A7A26B5D5AAED2643336E60 (void);
-// 0x00000074 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::StartRecording()
+// 0x00000075 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::StartRecording()
 extern void InputRecordingService_StartRecording_m05D7626A675B9C42900590944D52483E40714DF6 (void);
-// 0x00000075 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::StopRecording()
+// 0x00000076 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::StopRecording()
 extern void InputRecordingService_StopRecording_m76C44E83A3BE4D1814C462836AA8D0B26E68E78E (void);
-// 0x00000076 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::LateUpdate()
+// 0x00000077 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::LateUpdate()
 extern void InputRecordingService_LateUpdate_m512B1CACD6AD5BEFC64ED371E3726F8A6D04F8A9 (void);
-// 0x00000077 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::DiscardRecordedInput()
+// 0x00000078 System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::DiscardRecordedInput()
 extern void InputRecordingService_DiscardRecordedInput_m76F63F8F3EB93999A7278D86CD3D0897168CE44C (void);
-// 0x00000078 System.String Microsoft.MixedReality.Toolkit.Input.InputRecordingService::SaveInputAnimation(System.String)
+// 0x00000079 System.String Microsoft.MixedReality.Toolkit.Input.InputRecordingService::SaveInputAnimation(System.String)
 extern void InputRecordingService_SaveInputAnimation_m0722CA5AEC0861CDFFF1458A9770539F66AB8F3F (void);
-// 0x00000079 System.String Microsoft.MixedReality.Toolkit.Input.InputRecordingService::SaveInputAnimation(System.String,System.String)
+// 0x0000007A System.String Microsoft.MixedReality.Toolkit.Input.InputRecordingService::SaveInputAnimation(System.String,System.String)
 extern void InputRecordingService_SaveInputAnimation_m9A8A1F47F0B896B3B2FF453AED9C91D793DC6060 (void);
-// 0x0000007A System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::ResetStartTime()
+// 0x0000007B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::ResetStartTime()
 extern void InputRecordingService_ResetStartTime_m54DB931C76EA3CB3DB995B82486F136B28B22B17 (void);
-// 0x0000007B System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::RecordKeyframe()
+// 0x0000007C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::RecordKeyframe()
 extern void InputRecordingService_RecordKeyframe_mF7DFA21FF0E2391F49CB0574A7231AAA304221D0 (void);
-// 0x0000007C System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::RecordInputHandData(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
+// 0x0000007D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::RecordInputHandData(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
 extern void InputRecordingService_RecordInputHandData_m60C0342FE4B72342F156F7FF2D318F2D81A6178E (void);
-// 0x0000007D System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::PruneBuffer()
+// 0x0000007E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::PruneBuffer()
 extern void InputRecordingService_PruneBuffer_mD56B955866241876DED757B6A097946CA1711935 (void);
-// 0x0000007E System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::.cctor()
+// 0x0000007F System.Void Microsoft.MixedReality.Toolkit.Input.InputRecordingService::.cctor()
 extern void InputRecordingService__cctor_mE38BE59AB7C494B91517ECF6AE0C1F81C167A5ED (void);
-// 0x0000007F System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_FrameRate()
+// 0x00000080 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_FrameRate()
 extern void MixedRealityInputRecordingProfile_get_FrameRate_m073A10D133A0D9B9FB75E9E2EFFDCEAFB6D8A7D0 (void);
-// 0x00000080 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordHandData()
+// 0x00000081 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordHandData()
 extern void MixedRealityInputRecordingProfile_get_RecordHandData_mFD612DB88512A750FF0D12D05DA06E423EB1E384 (void);
-// 0x00000081 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_JointPositionThreshold()
+// 0x00000082 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_JointPositionThreshold()
 extern void MixedRealityInputRecordingProfile_get_JointPositionThreshold_m334C9FBDA90EEEDD15AE647E8F7E225A1194F396 (void);
-// 0x00000082 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_JointRotationThreshold()
+// 0x00000083 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_JointRotationThreshold()
 extern void MixedRealityInputRecordingProfile_get_JointRotationThreshold_mB2AE3496B2BBB868F22645E466074C313DDBEA9B (void);
-// 0x00000083 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordCameraPose()
+// 0x00000084 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordCameraPose()
 extern void MixedRealityInputRecordingProfile_get_RecordCameraPose_m7BA79D3B22E44E686AA955C56072F7A6716FED72 (void);
-// 0x00000084 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_CameraPositionThreshold()
+// 0x00000085 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_CameraPositionThreshold()
 extern void MixedRealityInputRecordingProfile_get_CameraPositionThreshold_m8240A9C1827186F6D194747E3D77D9C24C7BC41E (void);
-// 0x00000085 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_CameraRotationThreshold()
+// 0x00000086 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_CameraRotationThreshold()
 extern void MixedRealityInputRecordingProfile_get_CameraRotationThreshold_mE91B9970882A9B83EB05E637C36A1D3F1361F6A9 (void);
-// 0x00000086 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordEyeGaze()
+// 0x00000087 System.Boolean Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_RecordEyeGaze()
 extern void MixedRealityInputRecordingProfile_get_RecordEyeGaze_m9DA2CB6AF1179E5AA1A466E15292817DF3F61B54 (void);
-// 0x00000087 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_EyeGazeOriginThreshold()
+// 0x00000088 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_EyeGazeOriginThreshold()
 extern void MixedRealityInputRecordingProfile_get_EyeGazeOriginThreshold_mB233A67A96A3F58D3A1CD6448A28B89C4E978589 (void);
-// 0x00000088 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_EyeGazeDirectionThreshold()
+// 0x00000089 System.Single Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_EyeGazeDirectionThreshold()
 extern void MixedRealityInputRecordingProfile_get_EyeGazeDirectionThreshold_m817BE12ABBB0A219E23004B30D773761BD3062FD (void);
-// 0x00000089 System.Int32 Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_PartitionSize()
+// 0x0000008A System.Int32 Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::get_PartitionSize()
 extern void MixedRealityInputRecordingProfile_get_PartitionSize_mCFA857FFB0CBE37678EF751667040AEB1E84329D (void);
-// 0x0000008A System.Void Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::.ctor()
+// 0x0000008B System.Void Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile::.ctor()
 extern void MixedRealityInputRecordingProfile__ctor_mA556B947E9D58537C70FEC8A4989C15899B17521 (void);
-static Il2CppMethodPointer s_methodPointers[138] = 
+static Il2CppMethodPointer s_methodPointers[139] = 
 {
 	InputAnimationMarker__ctor_m245101D8B91457B5A844CC3D3F6422D4D8451029,
 	InputAnimation_get_Duration_mBDCF186E526D1AA62EF8559B42A764D61AEB216D,
@@ -338,6 +340,7 @@ static Il2CppMethodPointer s_methodPointers[138] =
 	RayCurves__ctor_m6B5E5B505F7A60B975EC6BE76D36E7145230B958,
 	U3CU3Ec__DisplayClass50_0__ctor_m9307C8A0B30C2B5E1A67C53BD73644B43E85EEDE,
 	U3CU3Ec__DisplayClass50_0_U3CFromStreamAsyncU3Eb__0_mCA8652CFD02F2DEAC4C03D654D917F7BD8FB898D,
+	U3CFromStreamAsyncU3Ed__50__ctor_m8C33304AC99831A1942A26EC456999B9837CAC56,
 	U3CFromStreamAsyncU3Ed__50_MoveNext_m9CEBD203C4A893138FAE7CE745BE8D8FBEC6AFAC,
 	U3CFromStreamAsyncU3Ed__50_SetStateMachine_mE24194826612C172D23BF3DEFB86A5CD2AAEC164,
 	U3CGetAllAnimationCurvesU3Ed__60__ctor_m07DDAD234100D6B55213BB5CE9BD361D0501BF22,
@@ -429,163 +432,157 @@ static Il2CppMethodPointer s_methodPointers[138] =
 	MixedRealityInputRecordingProfile_get_PartitionSize_mCFA857FFB0CBE37678EF751667040AEB1E84329D,
 	MixedRealityInputRecordingProfile__ctor_mA556B947E9D58537C70FEC8A4989C15899B17521,
 };
-extern void U3CFromStreamAsyncU3Ed__50_MoveNext_m9CEBD203C4A893138FAE7CE745BE8D8FBEC6AFAC_AdjustorThunk (void);
-extern void U3CFromStreamAsyncU3Ed__50_SetStateMachine_mE24194826612C172D23BF3DEFB86A5CD2AAEC164_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+static const int32_t s_InvokerIndices[139] = 
 {
-	{ 0x06000031, U3CFromStreamAsyncU3Ed__50_MoveNext_m9CEBD203C4A893138FAE7CE745BE8D8FBEC6AFAC_AdjustorThunk },
-	{ 0x06000032, U3CFromStreamAsyncU3Ed__50_SetStateMachine_mE24194826612C172D23BF3DEFB86A5CD2AAEC164_AdjustorThunk },
-};
-static const int32_t s_InvokerIndices[138] = 
-{
-	5537,
-	5482,
-	5475,
-	4547,
-	5475,
-	4547,
-	5475,
-	4547,
-	5537,
-	2654,
-	1124,
-	3483,
-	1191,
-	3569,
-	7045,
-	7677,
-	7045,
-	5537,
-	4511,
-	498,
-	1190,
-	5436,
-	6838,
-	6839,
-	6136,
-	6832,
-	6831,
-	6832,
-	6831,
-	6095,
-	6095,
-	5845,
-	8016,
-	6838,
-	6479,
-	6783,
-	6783,
-	6783,
-	2685,
-	1580,
-	3483,
-	5537,
-	2686,
-	1580,
-	3569,
-	5537,
-	5537,
-	5436,
-	5537,
-	4511,
-	4472,
-	5537,
-	5475,
-	5537,
-	5537,
-	5436,
-	5537,
-	5436,
-	5436,
-	5436,
-	7046,
-	7874,
-	6805,
-	7333,
-	6832,
-	7333,
-	6832,
-	7333,
-	6832,
-	7333,
-	8016,
-	5482,
-	5537,
-	5537,
-	4553,
+	5585,
+	5530,
+	5523,
+	4578,
+	5523,
+	4578,
+	5523,
+	4578,
+	5585,
+	2671,
+	1128,
+	3506,
+	1195,
+	3592,
+	7132,
+	7765,
+	7132,
+	5585,
+	4542,
+	496,
+	1194,
+	5484,
+	6923,
+	6924,
+	6204,
+	6917,
+	6916,
+	6917,
+	6916,
+	6163,
+	6163,
+	5898,
+	8104,
+	6923,
+	6549,
+	6868,
+	6868,
+	6868,
+	2702,
+	1586,
+	3506,
+	5585,
+	2703,
+	1586,
+	3592,
+	5585,
+	5585,
+	5484,
+	5585,
+	5585,
+	4542,
 	4503,
-	4533,
-	1574,
-	1569,
-	3277,
-	5436,
-	5436,
-	5482,
-	4553,
-	5475,
-	4547,
-	5475,
-	4547,
-	5475,
-	4547,
-	5475,
-	4547,
-	5429,
-	4503,
-	5457,
-	4533,
-	5436,
-	4511,
-	5436,
-	4511,
-	4553,
-	4511,
-	4511,
-	4511,
-	4511,
-	5475,
-	4547,
-	5475,
-	4547,
-	5482,
-	5482,
-	4553,
-	5436,
-	5537,
-	5537,
-	5537,
-	5537,
-	5537,
-	5537,
-	3525,
-	1881,
-	5537,
-	5537,
-	4547,
-	5537,
-	8016,
-	5482,
-	5475,
-	5482,
-	5482,
-	5475,
-	5482,
-	5482,
-	5475,
-	5482,
-	5482,
-	5397,
-	5537,
+	5585,
+	5523,
+	5585,
+	5585,
+	5484,
+	5585,
+	5484,
+	5484,
+	5484,
+	7133,
+	7962,
+	6890,
+	7420,
+	6917,
+	7420,
+	6917,
+	7420,
+	6917,
+	7420,
+	8104,
+	5530,
+	5585,
+	5585,
+	4584,
+	4534,
+	4564,
+	1580,
+	1575,
+	3297,
+	5484,
+	5484,
+	5530,
+	4584,
+	5523,
+	4578,
+	5523,
+	4578,
+	5523,
+	4578,
+	5523,
+	4578,
+	5477,
+	4534,
+	5505,
+	4564,
+	5484,
+	4542,
+	5484,
+	4542,
+	4584,
+	4542,
+	4542,
+	4542,
+	4542,
+	5523,
+	4578,
+	5523,
+	4578,
+	5530,
+	5530,
+	4584,
+	5484,
+	5585,
+	5585,
+	5585,
+	5585,
+	5585,
+	5585,
+	3548,
+	1889,
+	5585,
+	5585,
+	4578,
+	5585,
+	8104,
+	5530,
+	5523,
+	5530,
+	5530,
+	5523,
+	5530,
+	5530,
+	5523,
+	5530,
+	5530,
+	5445,
+	5585,
 };
 extern const CustomAttributesCacheGenerator g_Microsoft_MixedReality_Toolkit_Services_InputAnimation_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_InputAnimation_CodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_InputAnimation_CodeGenModule = 
 {
 	"Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll",
-	138,
+	139,
 	s_methodPointers,
-	2,
-	s_adjustorThunks,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

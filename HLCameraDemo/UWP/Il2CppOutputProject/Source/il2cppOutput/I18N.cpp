@@ -9169,7 +9169,7 @@ IL_0006:
 			String_t* L_2 = ___name0;
 			NullCheck(L_1);
 			RuntimeObject * L_3;
-			L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+			L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 			V_0 = L_3;
 			RuntimeObject * L_4 = V_0;
 			if (!L_4)
@@ -9191,7 +9191,7 @@ IL_0027:
 			String_t* L_7 = ___name0;
 			NullCheck(L_6);
 			RuntimeObject * L_8;
-			L_8 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_6, L_7);
+			L_8 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_6, L_7);
 			V_1 = ((String_t*)CastclassSealed((RuntimeObject*)L_8, String_t_il2cpp_TypeInfo_var));
 			String_t* L_9 = V_1;
 			if (L_9)
@@ -9212,7 +9212,7 @@ IL_0044:
 			String_t* L_11 = V_1;
 			NullCheck(L_10);
 			RuntimeObject * L_12;
-			L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_10, L_11);
+			L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_10, L_11);
 			V_2 = ((Assembly_t *)CastclassClass((RuntimeObject*)L_12, Assembly_t_il2cpp_TypeInfo_var));
 			Assembly_t * L_13 = V_2;
 			bool L_14;
@@ -9285,7 +9285,7 @@ IL_0095:
 			String_t* L_25 = V_1;
 			Assembly_t * L_26 = V_2;
 			NullCheck(L_24);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_24, L_25, L_26);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_24, L_25, L_26);
 		}
 
 IL_00a2:

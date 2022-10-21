@@ -99,8 +99,6 @@ struct IntPtrU5BU5D_t27FC72B0409D75AAF33EC42498E8094E95FEE9A6;
 struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t4AD999C288CB6D1F38A299D12B1598D606588971;
-// System.String[]
-struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A;
 // System.Type[]
 struct TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755;
 // System.UInt32[]
@@ -2198,28 +2196,16 @@ public:
 	UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39 * ____parentKeyConstraint_5;
 	// System.Data.ForeignKeyConstraint System.Data.DataRelation::_childKeyConstraint
 	ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD * ____childKeyConstraint_6;
-	// System.String[] System.Data.DataRelation::_parentColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____parentColumnNames_7;
-	// System.String[] System.Data.DataRelation::_childColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____childColumnNames_8;
-	// System.String System.Data.DataRelation::_parentTableName
-	String_t* ____parentTableName_9;
-	// System.String System.Data.DataRelation::_childTableName
-	String_t* ____childTableName_10;
-	// System.String System.Data.DataRelation::_parentTableNamespace
-	String_t* ____parentTableNamespace_11;
-	// System.String System.Data.DataRelation::_childTableNamespace
-	String_t* ____childTableNamespace_12;
 	// System.Boolean System.Data.DataRelation::_nested
-	bool ____nested_13;
+	bool ____nested_7;
 	// System.Boolean System.Data.DataRelation::_createConstraints
-	bool ____createConstraints_14;
+	bool ____createConstraints_8;
 	// System.Boolean System.Data.DataRelation::_checkMultipleNested
-	bool ____checkMultipleNested_15;
+	bool ____checkMultipleNested_9;
 	// System.Int32 System.Data.DataRelation::_objectID
-	int32_t ____objectID_17;
+	int32_t ____objectID_11;
 	// System.ComponentModel.PropertyChangedEventHandler System.Data.DataRelation::PropertyChanging
-	PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * ___PropertyChanging_18;
+	PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * ___PropertyChanging_12;
 
 public:
 	inline static int32_t get_offset_of__dataSet_0() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____dataSet_0)); }
@@ -2285,99 +2271,45 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____childKeyConstraint_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__parentColumnNames_7() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentColumnNames_7)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__parentColumnNames_7() const { return ____parentColumnNames_7; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__parentColumnNames_7() { return &____parentColumnNames_7; }
-	inline void set__parentColumnNames_7(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of__nested_7() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____nested_7)); }
+	inline bool get__nested_7() const { return ____nested_7; }
+	inline bool* get_address_of__nested_7() { return &____nested_7; }
+	inline void set__nested_7(bool value)
 	{
-		____parentColumnNames_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentColumnNames_7), (void*)value);
+		____nested_7 = value;
 	}
 
-	inline static int32_t get_offset_of__childColumnNames_8() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childColumnNames_8)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__childColumnNames_8() const { return ____childColumnNames_8; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__childColumnNames_8() { return &____childColumnNames_8; }
-	inline void set__childColumnNames_8(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of__createConstraints_8() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____createConstraints_8)); }
+	inline bool get__createConstraints_8() const { return ____createConstraints_8; }
+	inline bool* get_address_of__createConstraints_8() { return &____createConstraints_8; }
+	inline void set__createConstraints_8(bool value)
 	{
-		____childColumnNames_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childColumnNames_8), (void*)value);
+		____createConstraints_8 = value;
 	}
 
-	inline static int32_t get_offset_of__parentTableName_9() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentTableName_9)); }
-	inline String_t* get__parentTableName_9() const { return ____parentTableName_9; }
-	inline String_t** get_address_of__parentTableName_9() { return &____parentTableName_9; }
-	inline void set__parentTableName_9(String_t* value)
+	inline static int32_t get_offset_of__checkMultipleNested_9() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____checkMultipleNested_9)); }
+	inline bool get__checkMultipleNested_9() const { return ____checkMultipleNested_9; }
+	inline bool* get_address_of__checkMultipleNested_9() { return &____checkMultipleNested_9; }
+	inline void set__checkMultipleNested_9(bool value)
 	{
-		____parentTableName_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableName_9), (void*)value);
+		____checkMultipleNested_9 = value;
 	}
 
-	inline static int32_t get_offset_of__childTableName_10() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childTableName_10)); }
-	inline String_t* get__childTableName_10() const { return ____childTableName_10; }
-	inline String_t** get_address_of__childTableName_10() { return &____childTableName_10; }
-	inline void set__childTableName_10(String_t* value)
+	inline static int32_t get_offset_of__objectID_11() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____objectID_11)); }
+	inline int32_t get__objectID_11() const { return ____objectID_11; }
+	inline int32_t* get_address_of__objectID_11() { return &____objectID_11; }
+	inline void set__objectID_11(int32_t value)
 	{
-		____childTableName_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childTableName_10), (void*)value);
+		____objectID_11 = value;
 	}
 
-	inline static int32_t get_offset_of__parentTableNamespace_11() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentTableNamespace_11)); }
-	inline String_t* get__parentTableNamespace_11() const { return ____parentTableNamespace_11; }
-	inline String_t** get_address_of__parentTableNamespace_11() { return &____parentTableNamespace_11; }
-	inline void set__parentTableNamespace_11(String_t* value)
+	inline static int32_t get_offset_of_PropertyChanging_12() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ___PropertyChanging_12)); }
+	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * get_PropertyChanging_12() const { return ___PropertyChanging_12; }
+	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 ** get_address_of_PropertyChanging_12() { return &___PropertyChanging_12; }
+	inline void set_PropertyChanging_12(PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * value)
 	{
-		____parentTableNamespace_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableNamespace_11), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__childTableNamespace_12() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childTableNamespace_12)); }
-	inline String_t* get__childTableNamespace_12() const { return ____childTableNamespace_12; }
-	inline String_t** get_address_of__childTableNamespace_12() { return &____childTableNamespace_12; }
-	inline void set__childTableNamespace_12(String_t* value)
-	{
-		____childTableNamespace_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childTableNamespace_12), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__nested_13() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____nested_13)); }
-	inline bool get__nested_13() const { return ____nested_13; }
-	inline bool* get_address_of__nested_13() { return &____nested_13; }
-	inline void set__nested_13(bool value)
-	{
-		____nested_13 = value;
-	}
-
-	inline static int32_t get_offset_of__createConstraints_14() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____createConstraints_14)); }
-	inline bool get__createConstraints_14() const { return ____createConstraints_14; }
-	inline bool* get_address_of__createConstraints_14() { return &____createConstraints_14; }
-	inline void set__createConstraints_14(bool value)
-	{
-		____createConstraints_14 = value;
-	}
-
-	inline static int32_t get_offset_of__checkMultipleNested_15() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____checkMultipleNested_15)); }
-	inline bool get__checkMultipleNested_15() const { return ____checkMultipleNested_15; }
-	inline bool* get_address_of__checkMultipleNested_15() { return &____checkMultipleNested_15; }
-	inline void set__checkMultipleNested_15(bool value)
-	{
-		____checkMultipleNested_15 = value;
-	}
-
-	inline static int32_t get_offset_of__objectID_17() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____objectID_17)); }
-	inline int32_t get__objectID_17() const { return ____objectID_17; }
-	inline int32_t* get_address_of__objectID_17() { return &____objectID_17; }
-	inline void set__objectID_17(int32_t value)
-	{
-		____objectID_17 = value;
-	}
-
-	inline static int32_t get_offset_of_PropertyChanging_18() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ___PropertyChanging_18)); }
-	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * get_PropertyChanging_18() const { return ___PropertyChanging_18; }
-	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 ** get_address_of_PropertyChanging_18() { return &___PropertyChanging_18; }
-	inline void set_PropertyChanging_18(PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * value)
-	{
-		___PropertyChanging_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___PropertyChanging_18), (void*)value);
+		___PropertyChanging_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PropertyChanging_12), (void*)value);
 	}
 };
 
@@ -2385,15 +2317,15 @@ struct DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields
 {
 public:
 	// System.Int32 System.Data.DataRelation::s_objectTypeCount
-	int32_t ___s_objectTypeCount_16;
+	int32_t ___s_objectTypeCount_10;
 
 public:
-	inline static int32_t get_offset_of_s_objectTypeCount_16() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields, ___s_objectTypeCount_16)); }
-	inline int32_t get_s_objectTypeCount_16() const { return ___s_objectTypeCount_16; }
-	inline int32_t* get_address_of_s_objectTypeCount_16() { return &___s_objectTypeCount_16; }
-	inline void set_s_objectTypeCount_16(int32_t value)
+	inline static int32_t get_offset_of_s_objectTypeCount_10() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields, ___s_objectTypeCount_10)); }
+	inline int32_t get_s_objectTypeCount_10() const { return ___s_objectTypeCount_10; }
+	inline int32_t* get_address_of_s_objectTypeCount_10() { return &___s_objectTypeCount_10; }
+	inline void set_s_objectTypeCount_10(int32_t value)
 	{
-		___s_objectTypeCount_16 = value;
+		___s_objectTypeCount_10 = value;
 	}
 };
 
@@ -3161,10 +3093,6 @@ public:
 	Index_tBA5996BF61AC61F6DE0C3EED5475B25D2892F663 * ____constraintIndex_6;
 	// System.Boolean System.Data.UniqueConstraint::_bPrimaryKey
 	bool ____bPrimaryKey_7;
-	// System.String System.Data.UniqueConstraint::_constraintName
-	String_t* ____constraintName_8;
-	// System.String[] System.Data.UniqueConstraint::_columnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____columnNames_9;
 
 public:
 	inline static int32_t get_offset_of__key_5() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____key_5)); }
@@ -3191,24 +3119,6 @@ public:
 	inline void set__bPrimaryKey_7(bool value)
 	{
 		____bPrimaryKey_7 = value;
-	}
-
-	inline static int32_t get_offset_of__constraintName_8() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____constraintName_8)); }
-	inline String_t* get__constraintName_8() const { return ____constraintName_8; }
-	inline String_t** get_address_of__constraintName_8() { return &____constraintName_8; }
-	inline void set__constraintName_8(String_t* value)
-	{
-		____constraintName_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____constraintName_8), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__columnNames_9() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____columnNames_9)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__columnNames_9() const { return ____columnNames_9; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__columnNames_9() { return &____columnNames_9; }
-	inline void set__columnNames_9(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____columnNames_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____columnNames_9), (void*)value);
 	}
 };
 
@@ -5243,14 +5153,6 @@ public:
 	DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06  ____childKey_8;
 	// System.Data.DataKey System.Data.ForeignKeyConstraint::_parentKey
 	DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06  ____parentKey_9;
-	// System.String System.Data.ForeignKeyConstraint::_constraintName
-	String_t* ____constraintName_10;
-	// System.String[] System.Data.ForeignKeyConstraint::_parentColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____parentColumnNames_11;
-	// System.String[] System.Data.ForeignKeyConstraint::_childColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____childColumnNames_12;
-	// System.String System.Data.ForeignKeyConstraint::_parentTableName
-	String_t* ____parentTableName_13;
 
 public:
 	inline static int32_t get_offset_of__deleteRule_5() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____deleteRule_5)); }
@@ -5293,42 +5195,6 @@ public:
 	{
 		____parentKey_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)&(((&____parentKey_9))->____columns_0), (void*)NULL);
-	}
-
-	inline static int32_t get_offset_of__constraintName_10() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____constraintName_10)); }
-	inline String_t* get__constraintName_10() const { return ____constraintName_10; }
-	inline String_t** get_address_of__constraintName_10() { return &____constraintName_10; }
-	inline void set__constraintName_10(String_t* value)
-	{
-		____constraintName_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____constraintName_10), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__parentColumnNames_11() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____parentColumnNames_11)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__parentColumnNames_11() const { return ____parentColumnNames_11; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__parentColumnNames_11() { return &____parentColumnNames_11; }
-	inline void set__parentColumnNames_11(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____parentColumnNames_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentColumnNames_11), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__childColumnNames_12() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____childColumnNames_12)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__childColumnNames_12() const { return ____childColumnNames_12; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__childColumnNames_12() { return &____childColumnNames_12; }
-	inline void set__childColumnNames_12(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____childColumnNames_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childColumnNames_12), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__parentTableName_13() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____parentTableName_13)); }
-	inline String_t* get__parentTableName_13() const { return ____parentTableName_13; }
-	inline String_t** get_address_of__parentTableName_13() { return &____parentTableName_13; }
-	inline void set__parentTableName_13(String_t* value)
-	{
-		____parentTableName_13 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableName_13), (void*)value);
 	}
 };
 
@@ -6794,7 +6660,7 @@ IL_0143:
 		V_1 = L_67;
 		DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * L_68 = ___relation0;
 		NullCheck(L_68);
-		bool L_69 = L_68->get__createConstraints_14();
+		bool L_69 = L_68->get__createConstraints_8();
 		if (!L_69)
 		{
 			goto IL_01c1;
@@ -8372,7 +8238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -8396,7 +8262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -8420,7 +8286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -8444,7 +8310,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_2->set_NamespaceURI_1(L_3);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_4 = __this->get__id_21();
 		RuntimeObject * L_5;
-		L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
+		L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
 		return L_5;
 	}
 }

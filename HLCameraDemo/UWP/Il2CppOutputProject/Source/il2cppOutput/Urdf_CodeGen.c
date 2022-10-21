@@ -42,13 +42,13 @@ static Il2CppMethodPointer s_methodPointers[8] =
 static const int32_t s_InvokerIndices[8] = 
 {
 	31,
-	4511,
-	2216,
-	982,
-	1454,
-	247,
-	2650,
-	4511,
+	4542,
+	2228,
+	985,
+	1459,
+	245,
+	2667,
+	4542,
 };
 extern const CustomAttributesCacheGenerator g_Urdf_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Urdf_CodeGenModule;

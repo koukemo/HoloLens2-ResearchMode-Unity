@@ -804,7 +804,6 @@ IL2CPP_EXTERN_C RuntimeClass* SerializationFormat_t31A4CB3E88553E85268A0DCE05E9D
 IL2CPP_EXTERN_C RuntimeClass* SqlBoolean_tD34BC5894C8A7061B0E2D2D2CBE8E4A5257FD4F3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringReader_t74E352C280EAC22C878867444978741F19E1F895_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringWriter_t7BEF6B06B35BC25817D8BE28593FB52F0525B839_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
@@ -7383,28 +7382,16 @@ public:
 	UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39 * ____parentKeyConstraint_5;
 	// System.Data.ForeignKeyConstraint System.Data.DataRelation::_childKeyConstraint
 	ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD * ____childKeyConstraint_6;
-	// System.String[] System.Data.DataRelation::_parentColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____parentColumnNames_7;
-	// System.String[] System.Data.DataRelation::_childColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____childColumnNames_8;
-	// System.String System.Data.DataRelation::_parentTableName
-	String_t* ____parentTableName_9;
-	// System.String System.Data.DataRelation::_childTableName
-	String_t* ____childTableName_10;
-	// System.String System.Data.DataRelation::_parentTableNamespace
-	String_t* ____parentTableNamespace_11;
-	// System.String System.Data.DataRelation::_childTableNamespace
-	String_t* ____childTableNamespace_12;
 	// System.Boolean System.Data.DataRelation::_nested
-	bool ____nested_13;
+	bool ____nested_7;
 	// System.Boolean System.Data.DataRelation::_createConstraints
-	bool ____createConstraints_14;
+	bool ____createConstraints_8;
 	// System.Boolean System.Data.DataRelation::_checkMultipleNested
-	bool ____checkMultipleNested_15;
+	bool ____checkMultipleNested_9;
 	// System.Int32 System.Data.DataRelation::_objectID
-	int32_t ____objectID_17;
+	int32_t ____objectID_11;
 	// System.ComponentModel.PropertyChangedEventHandler System.Data.DataRelation::PropertyChanging
-	PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * ___PropertyChanging_18;
+	PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * ___PropertyChanging_12;
 
 public:
 	inline static int32_t get_offset_of__dataSet_0() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____dataSet_0)); }
@@ -7470,99 +7457,45 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____childKeyConstraint_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__parentColumnNames_7() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentColumnNames_7)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__parentColumnNames_7() const { return ____parentColumnNames_7; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__parentColumnNames_7() { return &____parentColumnNames_7; }
-	inline void set__parentColumnNames_7(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of__nested_7() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____nested_7)); }
+	inline bool get__nested_7() const { return ____nested_7; }
+	inline bool* get_address_of__nested_7() { return &____nested_7; }
+	inline void set__nested_7(bool value)
 	{
-		____parentColumnNames_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentColumnNames_7), (void*)value);
+		____nested_7 = value;
 	}
 
-	inline static int32_t get_offset_of__childColumnNames_8() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childColumnNames_8)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__childColumnNames_8() const { return ____childColumnNames_8; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__childColumnNames_8() { return &____childColumnNames_8; }
-	inline void set__childColumnNames_8(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of__createConstraints_8() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____createConstraints_8)); }
+	inline bool get__createConstraints_8() const { return ____createConstraints_8; }
+	inline bool* get_address_of__createConstraints_8() { return &____createConstraints_8; }
+	inline void set__createConstraints_8(bool value)
 	{
-		____childColumnNames_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childColumnNames_8), (void*)value);
+		____createConstraints_8 = value;
 	}
 
-	inline static int32_t get_offset_of__parentTableName_9() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentTableName_9)); }
-	inline String_t* get__parentTableName_9() const { return ____parentTableName_9; }
-	inline String_t** get_address_of__parentTableName_9() { return &____parentTableName_9; }
-	inline void set__parentTableName_9(String_t* value)
+	inline static int32_t get_offset_of__checkMultipleNested_9() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____checkMultipleNested_9)); }
+	inline bool get__checkMultipleNested_9() const { return ____checkMultipleNested_9; }
+	inline bool* get_address_of__checkMultipleNested_9() { return &____checkMultipleNested_9; }
+	inline void set__checkMultipleNested_9(bool value)
 	{
-		____parentTableName_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableName_9), (void*)value);
+		____checkMultipleNested_9 = value;
 	}
 
-	inline static int32_t get_offset_of__childTableName_10() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childTableName_10)); }
-	inline String_t* get__childTableName_10() const { return ____childTableName_10; }
-	inline String_t** get_address_of__childTableName_10() { return &____childTableName_10; }
-	inline void set__childTableName_10(String_t* value)
+	inline static int32_t get_offset_of__objectID_11() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____objectID_11)); }
+	inline int32_t get__objectID_11() const { return ____objectID_11; }
+	inline int32_t* get_address_of__objectID_11() { return &____objectID_11; }
+	inline void set__objectID_11(int32_t value)
 	{
-		____childTableName_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childTableName_10), (void*)value);
+		____objectID_11 = value;
 	}
 
-	inline static int32_t get_offset_of__parentTableNamespace_11() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____parentTableNamespace_11)); }
-	inline String_t* get__parentTableNamespace_11() const { return ____parentTableNamespace_11; }
-	inline String_t** get_address_of__parentTableNamespace_11() { return &____parentTableNamespace_11; }
-	inline void set__parentTableNamespace_11(String_t* value)
+	inline static int32_t get_offset_of_PropertyChanging_12() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ___PropertyChanging_12)); }
+	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * get_PropertyChanging_12() const { return ___PropertyChanging_12; }
+	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 ** get_address_of_PropertyChanging_12() { return &___PropertyChanging_12; }
+	inline void set_PropertyChanging_12(PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * value)
 	{
-		____parentTableNamespace_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableNamespace_11), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__childTableNamespace_12() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____childTableNamespace_12)); }
-	inline String_t* get__childTableNamespace_12() const { return ____childTableNamespace_12; }
-	inline String_t** get_address_of__childTableNamespace_12() { return &____childTableNamespace_12; }
-	inline void set__childTableNamespace_12(String_t* value)
-	{
-		____childTableNamespace_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childTableNamespace_12), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__nested_13() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____nested_13)); }
-	inline bool get__nested_13() const { return ____nested_13; }
-	inline bool* get_address_of__nested_13() { return &____nested_13; }
-	inline void set__nested_13(bool value)
-	{
-		____nested_13 = value;
-	}
-
-	inline static int32_t get_offset_of__createConstraints_14() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____createConstraints_14)); }
-	inline bool get__createConstraints_14() const { return ____createConstraints_14; }
-	inline bool* get_address_of__createConstraints_14() { return &____createConstraints_14; }
-	inline void set__createConstraints_14(bool value)
-	{
-		____createConstraints_14 = value;
-	}
-
-	inline static int32_t get_offset_of__checkMultipleNested_15() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____checkMultipleNested_15)); }
-	inline bool get__checkMultipleNested_15() const { return ____checkMultipleNested_15; }
-	inline bool* get_address_of__checkMultipleNested_15() { return &____checkMultipleNested_15; }
-	inline void set__checkMultipleNested_15(bool value)
-	{
-		____checkMultipleNested_15 = value;
-	}
-
-	inline static int32_t get_offset_of__objectID_17() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ____objectID_17)); }
-	inline int32_t get__objectID_17() const { return ____objectID_17; }
-	inline int32_t* get_address_of__objectID_17() { return &____objectID_17; }
-	inline void set__objectID_17(int32_t value)
-	{
-		____objectID_17 = value;
-	}
-
-	inline static int32_t get_offset_of_PropertyChanging_18() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9, ___PropertyChanging_18)); }
-	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * get_PropertyChanging_18() const { return ___PropertyChanging_18; }
-	inline PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 ** get_address_of_PropertyChanging_18() { return &___PropertyChanging_18; }
-	inline void set_PropertyChanging_18(PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * value)
-	{
-		___PropertyChanging_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___PropertyChanging_18), (void*)value);
+		___PropertyChanging_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PropertyChanging_12), (void*)value);
 	}
 };
 
@@ -7570,15 +7503,15 @@ struct DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields
 {
 public:
 	// System.Int32 System.Data.DataRelation::s_objectTypeCount
-	int32_t ___s_objectTypeCount_16;
+	int32_t ___s_objectTypeCount_10;
 
 public:
-	inline static int32_t get_offset_of_s_objectTypeCount_16() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields, ___s_objectTypeCount_16)); }
-	inline int32_t get_s_objectTypeCount_16() const { return ___s_objectTypeCount_16; }
-	inline int32_t* get_address_of_s_objectTypeCount_16() { return &___s_objectTypeCount_16; }
-	inline void set_s_objectTypeCount_16(int32_t value)
+	inline static int32_t get_offset_of_s_objectTypeCount_10() { return static_cast<int32_t>(offsetof(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields, ___s_objectTypeCount_10)); }
+	inline int32_t get_s_objectTypeCount_10() const { return ___s_objectTypeCount_10; }
+	inline int32_t* get_address_of_s_objectTypeCount_10() { return &___s_objectTypeCount_10; }
+	inline void set_s_objectTypeCount_10(int32_t value)
 	{
-		___s_objectTypeCount_16 = value;
+		___s_objectTypeCount_10 = value;
 	}
 };
 
@@ -8838,10 +8771,6 @@ public:
 	Index_tBA5996BF61AC61F6DE0C3EED5475B25D2892F663 * ____constraintIndex_6;
 	// System.Boolean System.Data.UniqueConstraint::_bPrimaryKey
 	bool ____bPrimaryKey_7;
-	// System.String System.Data.UniqueConstraint::_constraintName
-	String_t* ____constraintName_8;
-	// System.String[] System.Data.UniqueConstraint::_columnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____columnNames_9;
 
 public:
 	inline static int32_t get_offset_of__key_5() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____key_5)); }
@@ -8868,24 +8797,6 @@ public:
 	inline void set__bPrimaryKey_7(bool value)
 	{
 		____bPrimaryKey_7 = value;
-	}
-
-	inline static int32_t get_offset_of__constraintName_8() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____constraintName_8)); }
-	inline String_t* get__constraintName_8() const { return ____constraintName_8; }
-	inline String_t** get_address_of__constraintName_8() { return &____constraintName_8; }
-	inline void set__constraintName_8(String_t* value)
-	{
-		____constraintName_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____constraintName_8), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__columnNames_9() { return static_cast<int32_t>(offsetof(UniqueConstraint_tC3E69EAF18F66B2517B72B7417D5028CBACD1B39, ____columnNames_9)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__columnNames_9() const { return ____columnNames_9; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__columnNames_9() { return &____columnNames_9; }
-	inline void set__columnNames_9(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____columnNames_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____columnNames_9), (void*)value);
 	}
 };
 
@@ -11972,14 +11883,6 @@ public:
 	DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06  ____childKey_8;
 	// System.Data.DataKey System.Data.ForeignKeyConstraint::_parentKey
 	DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06  ____parentKey_9;
-	// System.String System.Data.ForeignKeyConstraint::_constraintName
-	String_t* ____constraintName_10;
-	// System.String[] System.Data.ForeignKeyConstraint::_parentColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____parentColumnNames_11;
-	// System.String[] System.Data.ForeignKeyConstraint::_childColumnNames
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ____childColumnNames_12;
-	// System.String System.Data.ForeignKeyConstraint::_parentTableName
-	String_t* ____parentTableName_13;
 
 public:
 	inline static int32_t get_offset_of__deleteRule_5() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____deleteRule_5)); }
@@ -12022,42 +11925,6 @@ public:
 	{
 		____parentKey_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)&(((&____parentKey_9))->____columns_0), (void*)NULL);
-	}
-
-	inline static int32_t get_offset_of__constraintName_10() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____constraintName_10)); }
-	inline String_t* get__constraintName_10() const { return ____constraintName_10; }
-	inline String_t** get_address_of__constraintName_10() { return &____constraintName_10; }
-	inline void set__constraintName_10(String_t* value)
-	{
-		____constraintName_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____constraintName_10), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__parentColumnNames_11() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____parentColumnNames_11)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__parentColumnNames_11() const { return ____parentColumnNames_11; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__parentColumnNames_11() { return &____parentColumnNames_11; }
-	inline void set__parentColumnNames_11(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____parentColumnNames_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentColumnNames_11), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__childColumnNames_12() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____childColumnNames_12)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get__childColumnNames_12() const { return ____childColumnNames_12; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of__childColumnNames_12() { return &____childColumnNames_12; }
-	inline void set__childColumnNames_12(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
-	{
-		____childColumnNames_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____childColumnNames_12), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__parentTableName_13() { return static_cast<int32_t>(offsetof(ForeignKeyConstraint_t66E716D92081A532EEC92D35BE0576B1C21C76CD, ____parentTableName_13)); }
-	inline String_t* get__parentTableName_13() const { return ____parentTableName_13; }
-	inline String_t** get_address_of__parentTableName_13() { return &____parentTableName_13; }
-	inline void set__parentTableName_13(String_t* value)
-	{
-		____parentTableName_13 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____parentTableName_13), (void*)value);
 	}
 };
 
@@ -14725,43 +14592,6 @@ public:
 		#endif
 	}
 };
-// System.String[]
-struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) String_t* m_Items[1];
-
-public:
-	inline String_t* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, String_t* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
 // System.Data.IndexField[]
 struct IndexFieldU5BU5D_t5ACA22730370B8DD7B0EF591FD0A08918625568A  : public RuntimeArray
 {
@@ -15015,6 +14845,43 @@ public:
 	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
 	{
 		m_Items[index] = value;
+	}
+};
+// System.String[]
+struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+public:
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 // System.Data.DataTable[]
@@ -15538,8 +15405,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DataKey_GetHashCode_mB1606F19D27B199D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataKey_Equals_m64C1E6330794819C12D89B9FB072EDBC4CDE1A0C (DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * __this, DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06  ___value0, const RuntimeMethod* method);
 // System.Boolean System.Data.DataKey::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataKey_Equals_m5DFB1F4CAC272239056E49D6B45AF8384CF166D6 (DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * __this, RuntimeObject * ___value0, const RuntimeMethod* method);
-// System.String[] System.Data.DataKey::GetColumnNames()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE (DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * __this, const RuntimeMethod* method);
 // System.Void System.Data.IndexField::.ctor(System.Data.DataColumn,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IndexField__ctor_m860A839D8F8F50EA07FFF050081B339E67842AD6 (IndexField_t28DBF72DC6031998078C6C49D756E62D6B5AFCCF * __this, DataColumn_tC346323CF7BCB3895FDAF750C8B594F436CD1638 * ___column0, bool ___isDescending1, const RuntimeMethod* method);
 // System.Data.IndexField[] System.Data.DataKey::GetIndexDesc()
@@ -22281,68 +22146,6 @@ IL2CPP_EXTERN_C  bool DataKey_Equals_m64C1E6330794819C12D89B9FB072EDBC4CDE1A0C_A
 	_returnValue = DataKey_Equals_m64C1E6330794819C12D89B9FB072EDBC4CDE1A0C(_thisAdjusted, ___value0, method);
 	return _returnValue;
 }
-// System.String[] System.Data.DataKey::GetColumnNames()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE (DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* V_0 = NULL;
-	int32_t V_1 = 0;
-	{
-		DataColumnU5BU5D_t707F732693E261B8D499AF62145420BF689DAA9C* L_0 = __this->get__columns_0();
-		NullCheck(L_0);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_1 = (StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)SZArrayNew(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)(((RuntimeArray*)L_0)->max_length))));
-		V_0 = L_1;
-		V_1 = 0;
-		goto IL_0026;
-	}
-
-IL_0012:
-	{
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_2 = V_0;
-		int32_t L_3 = V_1;
-		DataColumnU5BU5D_t707F732693E261B8D499AF62145420BF689DAA9C* L_4 = __this->get__columns_0();
-		int32_t L_5 = V_1;
-		NullCheck(L_4);
-		int32_t L_6 = L_5;
-		DataColumn_tC346323CF7BCB3895FDAF750C8B594F436CD1638 * L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		NullCheck(L_7);
-		String_t* L_8;
-		L_8 = DataColumn_get_ColumnName_mB95C9BC0CEC364554756D0FC22C620FAA1C8AF53_inline(L_7, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, L_8);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (String_t*)L_8);
-		int32_t L_9 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_9, (int32_t)1));
-	}
-
-IL_0026:
-	{
-		int32_t L_10 = V_1;
-		DataColumnU5BU5D_t707F732693E261B8D499AF62145420BF689DAA9C* L_11 = __this->get__columns_0();
-		NullCheck(L_11);
-		if ((((int32_t)L_10) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length))))))
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_12 = V_0;
-		return L_12;
-	}
-}
-IL2CPP_EXTERN_C  StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * _thisAdjusted = reinterpret_cast<DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 *>(__this + _offset);
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* _returnValue;
-	_returnValue = DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE(_thisAdjusted, method);
-	return _returnValue;
-}
 // System.Data.IndexField[] System.Data.DataKey::GetIndexDesc()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IndexFieldU5BU5D_t5ACA22730370B8DD7B0EF591FD0A08918625568A* DataKey_GetIndexDesc_m1A9BE527A6FB77809B103C409186091216A2293D (DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * __this, const RuntimeMethod* method)
 {
@@ -22688,10 +22491,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation__ctor_mC5F376CEFB3968B29285
 	{
 		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
 		__this->set__relationName_2(L_0);
-		__this->set__checkMultipleNested_15((bool)1);
+		__this->set__checkMultipleNested_9((bool)1);
 		int32_t L_1;
-		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_16()), /*hidden argument*/NULL);
-		__this->set__objectID_17(L_1);
+		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_10()), /*hidden argument*/NULL);
+		__this->set__objectID_11(L_1);
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DataCommonEventSource_tBC373F38958D3451B6A45255B56744B53857439F_il2cpp_TypeInfo_var);
 		DataCommonEventSource_tBC373F38958D3451B6A45255B56744B53857439F * L_2 = ((DataCommonEventSource_tBC373F38958D3451B6A45255B56744B53857439F_StaticFields*)il2cpp_codegen_static_fields_for(DataCommonEventSource_tBC373F38958D3451B6A45255B56744B53857439F_il2cpp_TypeInfo_var))->get_Log_29();
@@ -22827,86 +22630,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation__ctor_m275CCC8B5939D2DB080E
 	{
 		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
 		__this->set__relationName_2(L_0);
-		__this->set__checkMultipleNested_15((bool)1);
+		__this->set__checkMultipleNested_9((bool)1);
 		int32_t L_1;
-		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_16()), /*hidden argument*/NULL);
-		__this->set__objectID_17(L_1);
+		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_10()), /*hidden argument*/NULL);
+		__this->set__objectID_11(L_1);
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
 		String_t* L_2 = ___relationName0;
 		DataColumnU5BU5D_t707F732693E261B8D499AF62145420BF689DAA9C* L_3 = ___parentColumns1;
 		DataColumnU5BU5D_t707F732693E261B8D499AF62145420BF689DAA9C* L_4 = ___childColumns2;
 		bool L_5 = ___createConstraints3;
 		DataRelation_Create_mC011FF0B6974126D74EC0D7435F0CD06CBCD6826(__this, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void System.Data.DataRelation::.ctor(System.String,System.String,System.String,System.String[],System.String[],System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation__ctor_m992D9C001F455D8E2FEBE5C4E6C6BCE2313B2FB7 (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, String_t* ___relationName0, String_t* ___parentTableName1, String_t* ___childTableName2, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___parentColumnNames3, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___childColumnNames4, bool ___nested5, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		__this->set__relationName_2(L_0);
-		__this->set__checkMultipleNested_15((bool)1);
-		int32_t L_1;
-		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_16()), /*hidden argument*/NULL);
-		__this->set__objectID_17(L_1);
-		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
-		String_t* L_2 = ___relationName0;
-		__this->set__relationName_2(L_2);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_3 = ___parentColumnNames3;
-		__this->set__parentColumnNames_7(L_3);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_4 = ___childColumnNames4;
-		__this->set__childColumnNames_8(L_4);
-		String_t* L_5 = ___parentTableName1;
-		__this->set__parentTableName_9(L_5);
-		String_t* L_6 = ___childTableName2;
-		__this->set__childTableName_10(L_6);
-		bool L_7 = ___nested5;
-		__this->set__nested_13(L_7);
-		return;
-	}
-}
-// System.Void System.Data.DataRelation::.ctor(System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation__ctor_m6D3D2728F1C89213433E9BA455E2404780027F94 (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, String_t* ___relationName0, String_t* ___parentTableName1, String_t* ___parentTableNamespace2, String_t* ___childTableName3, String_t* ___childTableNamespace4, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___parentColumnNames5, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___childColumnNames6, bool ___nested7, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		__this->set__relationName_2(L_0);
-		__this->set__checkMultipleNested_15((bool)1);
-		int32_t L_1;
-		L_1 = Interlocked_Increment_mEF7FA106280D9E57DA8A97887389A961B65E47D8((int32_t*)(((DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_StaticFields*)il2cpp_codegen_static_fields_for(DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9_il2cpp_TypeInfo_var))->get_address_of_s_objectTypeCount_16()), /*hidden argument*/NULL);
-		__this->set__objectID_17(L_1);
-		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
-		String_t* L_2 = ___relationName0;
-		__this->set__relationName_2(L_2);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_3 = ___parentColumnNames5;
-		__this->set__parentColumnNames_7(L_3);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_4 = ___childColumnNames6;
-		__this->set__childColumnNames_8(L_4);
-		String_t* L_5 = ___parentTableName1;
-		__this->set__parentTableName_9(L_5);
-		String_t* L_6 = ___childTableName3;
-		__this->set__childTableName_10(L_6);
-		String_t* L_7 = ___parentTableNamespace2;
-		__this->set__parentTableNamespace_11(L_7);
-		String_t* L_8 = ___childTableNamespace4;
-		__this->set__childTableNamespace_12(L_8);
-		bool L_9 = ___nested7;
-		__this->set__nested_13(L_9);
 		return;
 	}
 }
@@ -22959,26 +22692,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DataSet_t72D1077FF27561D819DB6F19AB7DBD00BB06
 		DataRelation_CheckStateForProperty_mAF8364D5CD42AC974641F7CDF144EA602037E148(__this, /*hidden argument*/NULL);
 		DataSet_t72D1077FF27561D819DB6F19AB7DBD00BB06CA3B * L_0 = __this->get__dataSet_0();
 		return L_0;
-	}
-}
-// System.String[] System.Data.DataRelation::get_ParentColumnNames()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* DataRelation_get_ParentColumnNames_mC3D9F61193073640B796250C8D11CE62D23CFC6B (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
-{
-	{
-		DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * L_0 = __this->get_address_of__parentKey_4();
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_1;
-		L_1 = DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE((DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 *)L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-// System.String[] System.Data.DataRelation::get_ChildColumnNames()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* DataRelation_get_ChildColumnNames_m76B9EB5BE9CCCE996715FDAB386474FCF47AC59B (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
-{
-	{
-		DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 * L_0 = __this->get_address_of__childKey_3();
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_1;
-		L_1 = DataKey_GetColumnNames_m30D3FAAEB7C1BF6701CB3C51A7707A22F6A81ACE((DataKey_t729DC4084D9FB3EDBD64E760202E14C4B79CEF06 *)L_0, /*hidden argument*/NULL);
-		return L_1;
 	}
 }
 // System.Boolean System.Data.DataRelation::IsKeyNull(System.Object[])
@@ -23768,7 +23481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataRelation_get_Nested_mBABE793C8D061AD
 {
 	{
 		DataRelation_CheckStateForProperty_mAF8364D5CD42AC974641F7CDF144EA602037E148(__this, /*hidden argument*/NULL);
-		bool L_0 = __this->get__nested_13();
+		bool L_0 = __this->get__nested_7();
 		return L_0;
 	}
 }
@@ -23815,7 +23528,7 @@ IL_0017:
 	try
 	{ // begin try (depth: 1)
 		{
-			bool L_4 = __this->get__nested_13();
+			bool L_4 = __this->get__nested_7();
 			bool L_5 = ___value0;
 			if ((((int32_t)L_4) == ((int32_t)L_5)))
 			{
@@ -24275,7 +23988,7 @@ IL_0212:
 IL_0229:
 		{
 			bool L_85 = ___value0;
-			__this->set__nested_13(L_85);
+			__this->set__nested_7(L_85);
 			DataTable_tDBA400EA08E60C6C79DA5033C245F9252AB48827 * L_86;
 			L_86 = VirtFuncInvoker0< DataTable_tDBA400EA08E60C6C79DA5033C245F9252AB48827 * >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, __this);
 			NullCheck(L_86);
@@ -24429,7 +24142,7 @@ IL_02d5:
 
 IL_02eb:
 			{
-				__this->set__nested_13((bool)0);
+				__this->set__nested_7((bool)0);
 				DataTable_tDBA400EA08E60C6C79DA5033C245F9252AB48827 * L_116;
 				L_116 = VirtFuncInvoker0< DataTable_tDBA400EA08E60C6C79DA5033C245F9252AB48827 * >::Invoke(5 /* System.Data.DataTable System.Data.DataRelation::get_ChildTable() */, __this);
 				NullCheck(L_116);
@@ -24649,7 +24362,7 @@ IL_0018:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataRelation_get_CheckMultipleNested_m76938A757E911DF35F9CBC2D94945BDF23CAC572 (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
 {
 	{
-		bool L_0 = __this->get__checkMultipleNested_15();
+		bool L_0 = __this->get__checkMultipleNested_9();
 		return L_0;
 	}
 }
@@ -24658,7 +24371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation_set_CheckMultipleNested_mD9
 {
 	{
 		bool L_0 = ___value0;
-		__this->set__checkMultipleNested_15(L_0);
+		__this->set__checkMultipleNested_9(L_0);
 		return;
 	}
 }
@@ -25122,7 +24835,7 @@ IL_0085:
 			NullCheck(G_B12_1);
 			G_B12_1->set__relationName_2(G_B12_0);
 			bool L_30 = ___createConstraints3;
-			__this->set__createConstraints_14(L_30);
+			__this->set__createConstraints_8(L_30);
 			IL2CPP_LEAVE(0xA0, FINALLY_0094);
 		}
 	} // end try (depth: 1)
@@ -25375,7 +25088,7 @@ IL_00da:
 		PropertyCollection_tB3B42BDE84A831DD057EAB1C19F69AB0625F5012 * L_59 = __this->get__extendedProperties_1();
 		NullCheck(L_59);
 		RuntimeObject* L_60;
-		L_60 = VirtFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_59);
+		L_60 = VirtFuncInvoker0< RuntimeObject* >::Invoke(30 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_59);
 		NullCheck(L_60);
 		RuntimeObject* L_61;
 		L_61 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t47A618747A1BB2A868710316F7372094849163A2_il2cpp_TypeInfo_var, L_60);
@@ -25405,9 +25118,9 @@ IL_0129:
 			RuntimeObject * L_68 = V_9;
 			NullCheck(L_67);
 			RuntimeObject * L_69;
-			L_69 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_67, L_68);
+			L_69 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_67, L_68);
 			NullCheck(L_65);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_65, L_66, L_69);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_65, L_66, L_69);
 		}
 
 IL_014d:
@@ -25481,7 +25194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation_OnPropertyChanging_mBE255B5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * L_0 = __this->get_PropertyChanging_18();
+		PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * L_0 = __this->get_PropertyChanging_12();
 		if (!L_0)
 		{
 			goto IL_002a;
@@ -25494,7 +25207,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataRelation_OnPropertyChanging_mBE255B5
 		L_2 = DataRelation_get_ObjectID_m19A931E6B67CB4A2883B3644355F2EDA5C4C39B7_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		DataCommonEventSource_Trace_TisInt32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_m18D04BD88E3FD8692FCCF6FEA7130CFD46F0DFDB(L_1, _stringLiteral7DAEB6BB18C28C23702E9B920CB9686A1F407108, L_2, /*hidden argument*/DataCommonEventSource_Trace_TisInt32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_m18D04BD88E3FD8692FCCF6FEA7130CFD46F0DFDB_RuntimeMethod_var);
-		PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * L_3 = __this->get_PropertyChanging_18();
+		PropertyChangedEventHandler_t094CCD63C952DCD4E1ED794434160679C28A8E99 * L_3 = __this->get_PropertyChanging_12();
 		PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 * L_4 = ___pcevent0;
 		NullCheck(L_3);
 		PropertyChangedEventHandler_Invoke_m12B212E1A923C9C0541719CA5365B8DCF0044837(L_3, __this, L_4, /*hidden argument*/NULL);
@@ -25930,7 +25643,7 @@ IL_00a7:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DataRelation_get_ObjectID_m19A931E6B67CB4A2883B3644355F2EDA5C4C39B7 (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
 {
 	{
-		int32_t L_0 = __this->get__objectID_17();
+		int32_t L_0 = __this->get__objectID_11();
 		return L_0;
 	}
 }
@@ -36743,7 +36456,7 @@ IL_01d7:
 			PropertyCollection_tB3B42BDE84A831DD057EAB1C19F69AB0625F5012 * L_92 = __this->get__extendedProperties_6();
 			NullCheck(L_92);
 			RuntimeObject* L_93;
-			L_93 = VirtFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_92);
+			L_93 = VirtFuncInvoker0< RuntimeObject* >::Invoke(30 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_92);
 			NullCheck(L_93);
 			RuntimeObject* L_94;
 			L_94 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t47A618747A1BB2A868710316F7372094849163A2_il2cpp_TypeInfo_var, L_93);
@@ -36773,9 +36486,9 @@ IL_01eb:
 				RuntimeObject * L_101 = V_13;
 				NullCheck(L_100);
 				RuntimeObject * L_102;
-				L_102 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_100, L_101);
+				L_102 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_100, L_101);
 				NullCheck(L_98);
-				VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_98, L_99, L_102);
+				VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_98, L_99, L_102);
 			}
 
 IL_020e:
@@ -44059,7 +43772,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DataColumnU5BU5D_t707F732693E261B
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DataRelation_get_ObjectID_m19A931E6B67CB4A2883B3644355F2EDA5C4C39B7_inline (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
 {
 	{
-		int32_t L_0 = __this->get__objectID_17();
+		int32_t L_0 = __this->get__objectID_11();
 		return L_0;
 	}
 }
@@ -44101,7 +43814,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DataRelationCollection_tD29A1A276
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DataRelation_get_CheckMultipleNested_m76938A757E911DF35F9CBC2D94945BDF23CAC572_inline (DataRelation_t0AA86AB6D62D5F0F71E6905C8E9D8C52054D0FC9 * __this, const RuntimeMethod* method)
 {
 	{
-		bool L_0 = __this->get__checkMultipleNested_15();
+		bool L_0 = __this->get__checkMultipleNested_9();
 		return L_0;
 	}
 }
@@ -44130,7 +43843,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DataRelation_set_CheckMultip
 {
 	{
 		bool L_0 = ___value0;
-		__this->set__checkMultipleNested_15(L_0);
+		__this->set__checkMultipleNested_9(L_0);
 		return;
 	}
 }

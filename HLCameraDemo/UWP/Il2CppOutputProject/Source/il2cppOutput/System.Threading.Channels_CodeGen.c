@@ -111,42 +111,62 @@ extern void ChannelUtilities__cctor_m61758464CFF0D3CC68F54A059A70CC0E12D9ADC7 (v
 // 0x00000045 System.Threading.Channels.ChannelWriter`1<TWrite> System.Threading.Channels.Channel`2::get_Writer()
 // 0x00000046 System.Void System.Threading.Channels.Channel`2::set_Writer(System.Threading.Channels.ChannelWriter`1<TWrite>)
 // 0x00000047 System.Void System.Threading.Channels.Channel`2::.ctor()
-// 0x00000048 System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1::.ctor(System.Boolean)
-// 0x00000049 System.Object System.Threading.Channels.SingleConsumerUnboundedChannel`1::get_SyncObj()
-// 0x0000004A System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::.ctor(System.Threading.Channels.SingleConsumerUnboundedChannel`1<T>)
-// 0x0000004B System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::TryRead(T&)
-// 0x0000004C System.Threading.Tasks.ValueTask`1<System.Boolean> System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::WaitToReadAsync(System.Threading.CancellationToken)
-// 0x0000004D System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::.ctor(System.Threading.Channels.SingleConsumerUnboundedChannel`1<T>)
-// 0x0000004E System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::TryComplete(System.Exception)
-// 0x0000004F System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::TryWrite(T)
-// 0x00000050 System.Void System.Threading.Channels.UnboundedChannel`1::.ctor(System.Boolean)
-// 0x00000051 System.Object System.Threading.Channels.UnboundedChannel`1::get_SyncObj()
-// 0x00000052 System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::.ctor(System.Threading.Channels.UnboundedChannel`1<T>)
-// 0x00000053 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::TryRead(T&)
-// 0x00000054 System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::CompleteIfDone(System.Threading.Channels.UnboundedChannel`1<T>)
-// 0x00000055 System.Threading.Tasks.ValueTask`1<System.Boolean> System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::WaitToReadAsync(System.Threading.CancellationToken)
-// 0x00000056 System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::.ctor(System.Threading.Channels.UnboundedChannel`1<T>)
-// 0x00000057 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::TryComplete(System.Exception)
-// 0x00000058 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::TryWrite(T)
-// 0x00000059 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::.ctor()
-// 0x0000005A System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::Enqueue(T)
-// 0x0000005B System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::EnqueueSlow(T,System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment<T>&)
-// 0x0000005C System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::TryDequeue(T&)
-// 0x0000005D System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::TryDequeueSlow(System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment<T>&,T[]&,T&)
-// 0x0000005E System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::get_IsEmpty()
-// 0x0000005F System.Collections.Generic.IEnumerator`1<T> System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::GetEnumerator()
-// 0x00000060 System.Collections.IEnumerator System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::System.Collections.IEnumerable.GetEnumerator()
-// 0x00000061 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment::.ctor(System.Int32)
-// 0x00000062 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::.ctor(System.Int32)
-// 0x00000063 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.IDisposable.Dispose()
-// 0x00000064 System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::MoveNext()
-// 0x00000065 T System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.Generic.IEnumerator<T>.get_Current()
-// 0x00000066 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.IEnumerator.Reset()
-// 0x00000067 System.Object System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.IEnumerator.get_Current()
-// 0x00000068 System.Boolean System.Collections.Generic.Deque`1::get_IsEmpty()
-// 0x00000069 T System.Collections.Generic.Deque`1::DequeueHead()
-// 0x0000006A System.Void System.Collections.Generic.Deque`1::.ctor()
-static Il2CppMethodPointer s_methodPointers[106] = 
+// 0x00000048 System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.IDebugEnumerable`1::GetEnumerator()
+// 0x00000049 System.Void System.Threading.Channels.DebugEnumeratorDebugView`1::.ctor(System.Threading.Channels.IDebugEnumerable`1<T>)
+// 0x0000004A T[] System.Threading.Channels.DebugEnumeratorDebugView`1::get_Items()
+// 0x0000004B System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1::.ctor(System.Boolean)
+// 0x0000004C System.Object System.Threading.Channels.SingleConsumerUnboundedChannel`1::get_SyncObj()
+// 0x0000004D System.Int32 System.Threading.Channels.SingleConsumerUnboundedChannel`1::get_ItemsCountForDebugger()
+// 0x0000004E System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1::get_ChannelIsClosedForDebugger()
+// 0x0000004F System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.SingleConsumerUnboundedChannel`1::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x00000050 System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::.ctor(System.Threading.Channels.SingleConsumerUnboundedChannel`1<T>)
+// 0x00000051 System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::TryRead(T&)
+// 0x00000052 System.Threading.Tasks.ValueTask`1<System.Boolean> System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::WaitToReadAsync(System.Threading.CancellationToken)
+// 0x00000053 System.Int32 System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::get_ItemsCountForDebugger()
+// 0x00000054 System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelReader::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x00000055 System.Void System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::.ctor(System.Threading.Channels.SingleConsumerUnboundedChannel`1<T>)
+// 0x00000056 System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::TryComplete(System.Exception)
+// 0x00000057 System.Boolean System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::TryWrite(T)
+// 0x00000058 System.Int32 System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::get_ItemsCountForDebugger()
+// 0x00000059 System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.SingleConsumerUnboundedChannel`1/UnboundedChannelWriter::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x0000005A System.Void System.Threading.Channels.UnboundedChannel`1::.ctor(System.Boolean)
+// 0x0000005B System.Object System.Threading.Channels.UnboundedChannel`1::get_SyncObj()
+// 0x0000005C System.Int32 System.Threading.Channels.UnboundedChannel`1::get_ItemsCountForDebugger()
+// 0x0000005D System.Boolean System.Threading.Channels.UnboundedChannel`1::get_ChannelIsClosedForDebugger()
+// 0x0000005E System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.UnboundedChannel`1::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x0000005F System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::.ctor(System.Threading.Channels.UnboundedChannel`1<T>)
+// 0x00000060 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::TryRead(T&)
+// 0x00000061 System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::CompleteIfDone(System.Threading.Channels.UnboundedChannel`1<T>)
+// 0x00000062 System.Threading.Tasks.ValueTask`1<System.Boolean> System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::WaitToReadAsync(System.Threading.CancellationToken)
+// 0x00000063 System.Int32 System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::get_ItemsCountForDebugger()
+// 0x00000064 System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.UnboundedChannel`1/UnboundedChannelReader::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x00000065 System.Void System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::.ctor(System.Threading.Channels.UnboundedChannel`1<T>)
+// 0x00000066 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::TryComplete(System.Exception)
+// 0x00000067 System.Boolean System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::TryWrite(T)
+// 0x00000068 System.Int32 System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::get_ItemsCountForDebugger()
+// 0x00000069 System.Collections.Generic.IEnumerator`1<T> System.Threading.Channels.UnboundedChannel`1/UnboundedChannelWriter::System.Threading.Channels.IDebugEnumerable<T>.GetEnumerator()
+// 0x0000006A System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::.ctor()
+// 0x0000006B System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::Enqueue(T)
+// 0x0000006C System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::EnqueueSlow(T,System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment<T>&)
+// 0x0000006D System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::TryDequeue(T&)
+// 0x0000006E System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::TryDequeueSlow(System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment<T>&,T[]&,T&)
+// 0x0000006F System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::get_IsEmpty()
+// 0x00000070 System.Collections.Generic.IEnumerator`1<T> System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::GetEnumerator()
+// 0x00000071 System.Collections.IEnumerator System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::System.Collections.IEnumerable.GetEnumerator()
+// 0x00000072 System.Int32 System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1::get_Count()
+// 0x00000073 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/Segment::.ctor(System.Int32)
+// 0x00000074 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/SingleProducerSingleConsumerQueue_DebugView::.ctor(System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1<T>)
+// 0x00000075 T[] System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/SingleProducerSingleConsumerQueue_DebugView::get_Items()
+// 0x00000076 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::.ctor(System.Int32)
+// 0x00000077 System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.IDisposable.Dispose()
+// 0x00000078 System.Boolean System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::MoveNext()
+// 0x00000079 T System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.Generic.IEnumerator<T>.get_Current()
+// 0x0000007A System.Void System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.IEnumerator.Reset()
+// 0x0000007B System.Object System.Collections.Concurrent.SingleProducerSingleConsumerQueue`1/<GetEnumerator>d__11::System.Collections.IEnumerator.get_Current()
+// 0x0000007C System.Boolean System.Collections.Generic.Deque`1::get_IsEmpty()
+// 0x0000007D T System.Collections.Generic.Deque`1::DequeueHead()
+// 0x0000007E System.Void System.Collections.Generic.Deque`1::.ctor()
+static Il2CppMethodPointer s_methodPointers[126] = 
 {
 	SR_UsingResourceKeys_m3B36E5A9CD8604FC6772834E652078A184A3A44F,
 	SR_GetResourceString_m4D7C1AD7406651B7527792EA8CCEFC2FC5389741,
@@ -254,23 +274,43 @@ static Il2CppMethodPointer s_methodPointers[106] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
 };
-static const int32_t s_InvokerIndices[106] = 
+static const int32_t s_InvokerIndices[126] = 
 {
-	8004,
-	7045,
-	7984,
-	7984,
-	7984,
-	7984,
-	7984,
-	7874,
-	7874,
-	8016,
-	8016,
-	8016,
-	5537,
-	8016,
+	8092,
+	7132,
+	8072,
+	8072,
+	8072,
+	8072,
+	8072,
+	7962,
+	7962,
+	8104,
+	8104,
+	8104,
+	5585,
+	8104,
 	-1,
 	-1,
 	-1,
@@ -300,24 +340,44 @@ static const int32_t s_InvokerIndices[106] =
 	-1,
 	-1,
 	-1,
-	5537,
-	4511,
-	4547,
-	5475,
-	4547,
-	5475,
-	4547,
-	5537,
-	5537,
+	5585,
+	4542,
+	4578,
+	5523,
+	4578,
+	5523,
+	4578,
+	5585,
+	5585,
 	-1,
 	-1,
 	-1,
-	7333,
-	6863,
-	6774,
+	7420,
+	6949,
+	6859,
 	-1,
-	7677,
-	8016,
+	7765,
+	8104,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
 	-1,
 	-1,
 	-1,
@@ -364,148 +424,171 @@ static const int32_t s_InvokerIndices[106] =
 	-1,
 	-1,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[16] = 
+static const Il2CppTokenRangePair s_rgctxIndices[18] = 
 {
 	{ 0x02000007, { 0, 19 } },
 	{ 0x02000008, { 19, 7 } },
 	{ 0x0200000F, { 34, 1 } },
 	{ 0x02000010, { 35, 2 } },
-	{ 0x02000013, { 37, 11 } },
-	{ 0x02000014, { 48, 7 } },
-	{ 0x02000015, { 55, 7 } },
-	{ 0x02000016, { 62, 13 } },
-	{ 0x02000017, { 75, 8 } },
-	{ 0x02000018, { 83, 9 } },
-	{ 0x02000019, { 92, 10 } },
-	{ 0x0200001A, { 102, 1 } },
-	{ 0x0200001D, { 103, 1 } },
-	{ 0x0200001E, { 104, 1 } },
+	{ 0x02000013, { 37, 6 } },
+	{ 0x02000014, { 43, 13 } },
+	{ 0x02000015, { 56, 9 } },
+	{ 0x02000016, { 65, 9 } },
+	{ 0x02000017, { 74, 15 } },
+	{ 0x02000018, { 89, 10 } },
+	{ 0x02000019, { 99, 11 } },
+	{ 0x0200001A, { 110, 10 } },
+	{ 0x0200001B, { 120, 1 } },
+	{ 0x0200001D, { 121, 3 } },
+	{ 0x0200001E, { 124, 1 } },
+	{ 0x0200001F, { 125, 1 } },
 	{ 0x0600002B, { 26, 4 } },
 	{ 0x0600003B, { 30, 4 } },
 };
-static const Il2CppRGCTXDefinition s_rgctxValues[105] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[126] = 
 {
-	{ (Il2CppRGCTXDataType)2, 1793 },
+	{ (Il2CppRGCTXDataType)2, 1830 },
 	{ (Il2CppRGCTXDataType)3, 2 },
-	{ (Il2CppRGCTXDataType)3, 2949 },
-	{ (Il2CppRGCTXDataType)2, 2267 },
-	{ (Il2CppRGCTXDataType)2, 13003 },
-	{ (Il2CppRGCTXDataType)3, 50077 },
-	{ (Il2CppRGCTXDataType)3, 2951 },
-	{ (Il2CppRGCTXDataType)3, 2943 },
+	{ (Il2CppRGCTXDataType)3, 2980 },
+	{ (Il2CppRGCTXDataType)2, 2311 },
+	{ (Il2CppRGCTXDataType)2, 13215 },
+	{ (Il2CppRGCTXDataType)3, 50687 },
+	{ (Il2CppRGCTXDataType)3, 2982 },
+	{ (Il2CppRGCTXDataType)3, 2974 },
 	{ (Il2CppRGCTXDataType)3, 3 },
-	{ (Il2CppRGCTXDataType)3, 2947 },
-	{ (Il2CppRGCTXDataType)3, 2946 },
-	{ (Il2CppRGCTXDataType)3, 2945 },
-	{ (Il2CppRGCTXDataType)3, 2950 },
-	{ (Il2CppRGCTXDataType)3, 2948 },
+	{ (Il2CppRGCTXDataType)3, 2978 },
+	{ (Il2CppRGCTXDataType)3, 2977 },
+	{ (Il2CppRGCTXDataType)3, 2976 },
+	{ (Il2CppRGCTXDataType)3, 2981 },
+	{ (Il2CppRGCTXDataType)3, 2979 },
 	{ (Il2CppRGCTXDataType)3, 5 },
 	{ (Il2CppRGCTXDataType)3, 6 },
-	{ (Il2CppRGCTXDataType)3, 2944 },
+	{ (Il2CppRGCTXDataType)3, 2975 },
 	{ (Il2CppRGCTXDataType)3, 4 },
 	{ (Il2CppRGCTXDataType)3, 7 },
-	{ (Il2CppRGCTXDataType)2, 1803 },
+	{ (Il2CppRGCTXDataType)2, 1840 },
 	{ (Il2CppRGCTXDataType)3, 18 },
-	{ (Il2CppRGCTXDataType)2, 1803 },
-	{ (Il2CppRGCTXDataType)2, 2271 },
-	{ (Il2CppRGCTXDataType)3, 2954 },
-	{ (Il2CppRGCTXDataType)3, 2953 },
-	{ (Il2CppRGCTXDataType)3, 2952 },
-	{ (Il2CppRGCTXDataType)2, 12586 },
-	{ (Il2CppRGCTXDataType)3, 48611 },
-	{ (Il2CppRGCTXDataType)2, 12107 },
-	{ (Il2CppRGCTXDataType)3, 45896 },
-	{ (Il2CppRGCTXDataType)3, 6850 },
-	{ (Il2CppRGCTXDataType)2, 648 },
-	{ (Il2CppRGCTXDataType)3, 2960 },
-	{ (Il2CppRGCTXDataType)3, 6851 },
-	{ (Il2CppRGCTXDataType)3, 3922 },
-	{ (Il2CppRGCTXDataType)3, 3936 },
-	{ (Il2CppRGCTXDataType)2, 2417 },
-	{ (Il2CppRGCTXDataType)2, 12112 },
-	{ (Il2CppRGCTXDataType)3, 45903 },
-	{ (Il2CppRGCTXDataType)3, 3932 },
-	{ (Il2CppRGCTXDataType)2, 2415 },
-	{ (Il2CppRGCTXDataType)2, 2418 },
-	{ (Il2CppRGCTXDataType)2, 12582 },
-	{ (Il2CppRGCTXDataType)3, 48580 },
-	{ (Il2CppRGCTXDataType)3, 3937 },
-	{ (Il2CppRGCTXDataType)2, 12584 },
-	{ (Il2CppRGCTXDataType)3, 48597 },
-	{ (Il2CppRGCTXDataType)3, 3938 },
-	{ (Il2CppRGCTXDataType)3, 3916 },
-	{ (Il2CppRGCTXDataType)2, 2404 },
-	{ (Il2CppRGCTXDataType)2, 2272 },
-	{ (Il2CppRGCTXDataType)3, 2955 },
-	{ (Il2CppRGCTXDataType)3, 45909 },
-	{ (Il2CppRGCTXDataType)3, 45910 },
-	{ (Il2CppRGCTXDataType)3, 45897 },
-	{ (Il2CppRGCTXDataType)3, 3923 },
-	{ (Il2CppRGCTXDataType)2, 2411 },
-	{ (Il2CppRGCTXDataType)3, 45898 },
-	{ (Il2CppRGCTXDataType)3, 45912 },
-	{ (Il2CppRGCTXDataType)3, 2956 },
-	{ (Il2CppRGCTXDataType)3, 45911 },
-	{ (Il2CppRGCTXDataType)3, 2957 },
-	{ (Il2CppRGCTXDataType)2, 2518 },
-	{ (Il2CppRGCTXDataType)3, 5981 },
-	{ (Il2CppRGCTXDataType)2, 2825 },
-	{ (Il2CppRGCTXDataType)3, 6852 },
-	{ (Il2CppRGCTXDataType)3, 3933 },
-	{ (Il2CppRGCTXDataType)2, 2416 },
-	{ (Il2CppRGCTXDataType)2, 2419 },
-	{ (Il2CppRGCTXDataType)2, 12583 },
-	{ (Il2CppRGCTXDataType)3, 48581 },
-	{ (Il2CppRGCTXDataType)3, 3939 },
-	{ (Il2CppRGCTXDataType)2, 12585 },
-	{ (Il2CppRGCTXDataType)3, 48598 },
-	{ (Il2CppRGCTXDataType)3, 3940 },
-	{ (Il2CppRGCTXDataType)3, 3917 },
-	{ (Il2CppRGCTXDataType)2, 2405 },
-	{ (Il2CppRGCTXDataType)2, 2274 },
-	{ (Il2CppRGCTXDataType)3, 2958 },
-	{ (Il2CppRGCTXDataType)3, 5983 },
-	{ (Il2CppRGCTXDataType)3, 48582 },
-	{ (Il2CppRGCTXDataType)3, 5984 },
-	{ (Il2CppRGCTXDataType)3, 48612 },
-	{ (Il2CppRGCTXDataType)3, 3924 },
-	{ (Il2CppRGCTXDataType)2, 2412 },
-	{ (Il2CppRGCTXDataType)3, 48613 },
-	{ (Il2CppRGCTXDataType)3, 5986 },
-	{ (Il2CppRGCTXDataType)3, 55918 },
-	{ (Il2CppRGCTXDataType)3, 6854 },
-	{ (Il2CppRGCTXDataType)3, 5985 },
-	{ (Il2CppRGCTXDataType)3, 6853 },
-	{ (Il2CppRGCTXDataType)3, 2959 },
-	{ (Il2CppRGCTXDataType)2, 12066 },
-	{ (Il2CppRGCTXDataType)3, 45792 },
-	{ (Il2CppRGCTXDataType)3, 45905 },
-	{ (Il2CppRGCTXDataType)3, 45904 },
-	{ (Il2CppRGCTXDataType)3, 58225 },
-	{ (Il2CppRGCTXDataType)3, 45908 },
-	{ (Il2CppRGCTXDataType)3, 45907 },
-	{ (Il2CppRGCTXDataType)2, 1903 },
+	{ (Il2CppRGCTXDataType)2, 1840 },
+	{ (Il2CppRGCTXDataType)2, 2315 },
+	{ (Il2CppRGCTXDataType)3, 2985 },
+	{ (Il2CppRGCTXDataType)3, 2984 },
+	{ (Il2CppRGCTXDataType)3, 2983 },
+	{ (Il2CppRGCTXDataType)2, 12791 },
+	{ (Il2CppRGCTXDataType)3, 49213 },
+	{ (Il2CppRGCTXDataType)2, 12300 },
+	{ (Il2CppRGCTXDataType)3, 46373 },
+	{ (Il2CppRGCTXDataType)3, 6825 },
+	{ (Il2CppRGCTXDataType)2, 662 },
+	{ (Il2CppRGCTXDataType)3, 2991 },
+	{ (Il2CppRGCTXDataType)3, 6826 },
+	{ (Il2CppRGCTXDataType)3, 3876 },
+	{ (Il2CppRGCTXDataType)3, 3890 },
+	{ (Il2CppRGCTXDataType)2, 2461 },
+	{ (Il2CppRGCTXDataType)2, 9972 },
+	{ (Il2CppRGCTXDataType)3, 31829 },
+	{ (Il2CppRGCTXDataType)2, 6075 },
+	{ (Il2CppRGCTXDataType)2, 6611 },
+	{ (Il2CppRGCTXDataType)3, 31830 },
+	{ (Il2CppRGCTXDataType)3, 31831 },
+	{ (Il2CppRGCTXDataType)2, 12305 },
+	{ (Il2CppRGCTXDataType)3, 46388 },
+	{ (Il2CppRGCTXDataType)3, 3886 },
+	{ (Il2CppRGCTXDataType)2, 2459 },
+	{ (Il2CppRGCTXDataType)2, 2462 },
+	{ (Il2CppRGCTXDataType)2, 12787 },
+	{ (Il2CppRGCTXDataType)3, 49166 },
+	{ (Il2CppRGCTXDataType)3, 3891 },
+	{ (Il2CppRGCTXDataType)2, 12789 },
+	{ (Il2CppRGCTXDataType)3, 49191 },
+	{ (Il2CppRGCTXDataType)3, 3892 },
+	{ (Il2CppRGCTXDataType)3, 46390 },
+	{ (Il2CppRGCTXDataType)3, 46389 },
+	{ (Il2CppRGCTXDataType)3, 3870 },
+	{ (Il2CppRGCTXDataType)2, 2448 },
+	{ (Il2CppRGCTXDataType)2, 2316 },
+	{ (Il2CppRGCTXDataType)3, 2986 },
+	{ (Il2CppRGCTXDataType)3, 46397 },
+	{ (Il2CppRGCTXDataType)3, 46399 },
+	{ (Il2CppRGCTXDataType)3, 46374 },
+	{ (Il2CppRGCTXDataType)3, 46398 },
+	{ (Il2CppRGCTXDataType)3, 46396 },
+	{ (Il2CppRGCTXDataType)3, 3877 },
+	{ (Il2CppRGCTXDataType)2, 2455 },
+	{ (Il2CppRGCTXDataType)3, 46375 },
+	{ (Il2CppRGCTXDataType)3, 46403 },
+	{ (Il2CppRGCTXDataType)3, 2987 },
+	{ (Il2CppRGCTXDataType)3, 46400 },
+	{ (Il2CppRGCTXDataType)3, 2988 },
+	{ (Il2CppRGCTXDataType)3, 46402 },
+	{ (Il2CppRGCTXDataType)3, 46401 },
+	{ (Il2CppRGCTXDataType)2, 2562 },
+	{ (Il2CppRGCTXDataType)3, 5948 },
+	{ (Il2CppRGCTXDataType)2, 2871 },
+	{ (Il2CppRGCTXDataType)3, 6827 },
+	{ (Il2CppRGCTXDataType)3, 3887 },
+	{ (Il2CppRGCTXDataType)2, 2460 },
+	{ (Il2CppRGCTXDataType)2, 2463 },
+	{ (Il2CppRGCTXDataType)2, 12788 },
+	{ (Il2CppRGCTXDataType)3, 49167 },
+	{ (Il2CppRGCTXDataType)3, 3893 },
+	{ (Il2CppRGCTXDataType)2, 12790 },
+	{ (Il2CppRGCTXDataType)3, 49192 },
+	{ (Il2CppRGCTXDataType)3, 3894 },
+	{ (Il2CppRGCTXDataType)3, 5950 },
+	{ (Il2CppRGCTXDataType)3, 5949 },
+	{ (Il2CppRGCTXDataType)3, 3871 },
+	{ (Il2CppRGCTXDataType)2, 2449 },
+	{ (Il2CppRGCTXDataType)2, 2318 },
+	{ (Il2CppRGCTXDataType)3, 2989 },
+	{ (Il2CppRGCTXDataType)3, 5953 },
+	{ (Il2CppRGCTXDataType)3, 49168 },
+	{ (Il2CppRGCTXDataType)3, 5955 },
+	{ (Il2CppRGCTXDataType)3, 49214 },
+	{ (Il2CppRGCTXDataType)3, 5954 },
+	{ (Il2CppRGCTXDataType)3, 5952 },
+	{ (Il2CppRGCTXDataType)3, 3878 },
+	{ (Il2CppRGCTXDataType)2, 2456 },
+	{ (Il2CppRGCTXDataType)3, 49215 },
+	{ (Il2CppRGCTXDataType)3, 5959 },
+	{ (Il2CppRGCTXDataType)3, 56547 },
+	{ (Il2CppRGCTXDataType)3, 6829 },
+	{ (Il2CppRGCTXDataType)3, 5956 },
+	{ (Il2CppRGCTXDataType)3, 6828 },
+	{ (Il2CppRGCTXDataType)3, 2990 },
+	{ (Il2CppRGCTXDataType)3, 5958 },
+	{ (Il2CppRGCTXDataType)3, 5957 },
+	{ (Il2CppRGCTXDataType)2, 12259 },
+	{ (Il2CppRGCTXDataType)3, 46268 },
+	{ (Il2CppRGCTXDataType)3, 46392 },
+	{ (Il2CppRGCTXDataType)3, 46391 },
+	{ (Il2CppRGCTXDataType)3, 58883 },
+	{ (Il2CppRGCTXDataType)3, 46395 },
+	{ (Il2CppRGCTXDataType)3, 46394 },
+	{ (Il2CppRGCTXDataType)2, 1940 },
 	{ (Il2CppRGCTXDataType)3, 512 },
-	{ (Il2CppRGCTXDataType)3, 45906 },
-	{ (Il2CppRGCTXDataType)2, 14080 },
-	{ (Il2CppRGCTXDataType)2, 1200 },
-	{ (Il2CppRGCTXDataType)3, 50846 },
+	{ (Il2CppRGCTXDataType)3, 46393 },
+	{ (Il2CppRGCTXDataType)2, 14301 },
+	{ (Il2CppRGCTXDataType)2, 9986 },
+	{ (Il2CppRGCTXDataType)3, 31870 },
+	{ (Il2CppRGCTXDataType)3, 31871 },
+	{ (Il2CppRGCTXDataType)2, 1232 },
+	{ (Il2CppRGCTXDataType)3, 51415 },
 };
 extern const CustomAttributesCacheGenerator g_System_Threading_Channels_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_System_Threading_Channels_CodeGenModule;
 const Il2CppCodeGenModule g_System_Threading_Channels_CodeGenModule = 
 {
 	"System.Threading.Channels.dll",
-	106,
+	126,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	16,
+	18,
 	s_rgctxIndices,
-	105,
+	126,
 	s_rgctxValues,
 	NULL,
 	g_System_Threading_Channels_AttributeGenerators,

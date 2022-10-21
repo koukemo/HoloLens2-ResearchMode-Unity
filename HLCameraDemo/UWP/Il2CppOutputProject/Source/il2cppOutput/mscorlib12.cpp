@@ -772,6 +772,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA8CDC5570A4ACD80715FF74C5C2937664B8B605C
 IL2CPP_EXTERN_C String_t* _stringLiteralAB41BD27FBE3D241AE90736BB0F8B3ABEBEFCAA8;
 IL2CPP_EXTERN_C String_t* _stringLiteralAD0EAD579F4BA2AF0880E986F927DEA09057BEB6;
 IL2CPP_EXTERN_C String_t* _stringLiteralAEDE9C0990D1ADDD9861348A37A5E29C4719A991;
+IL2CPP_EXTERN_C String_t* _stringLiteralAFA58366D18B83459A7329A0ADE678FD54489434;
 IL2CPP_EXTERN_C String_t* _stringLiteralB13F541ADEBF829A6D248520B70600679D67C303;
 IL2CPP_EXTERN_C String_t* _stringLiteralB16364632FFDA7CF8AB0EF198C603812CB7ECD94;
 IL2CPP_EXTERN_C String_t* _stringLiteralB1D8904B1D45257143CF6A3CD49DE33196C5451B;
@@ -841,6 +842,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* PKCS12_Decode_m0D395357B5B9FFBFE70B8188B7DF
 IL2CPP_EXTERN_C const RuntimeMethod* PKCS12_GetSymmetricAlgorithm_mEB7756CF815F6C0E86C9CEF4DC7BEC1F1B93D8BE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PKCS12_ReadSafeBag_mD632296E6D4E0BD23EB5372DAE9C019AB116FE49_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PKCS1_CreateFromName_m145F2C23D8F6F1CAF76494F1A9F2BA6B5F0DA331_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ParallelLoopState_get_InternalShouldExitCurrentIteration_mADB53E59137520CEA8AA15B4688FE5171FFF7B70_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Parallel_ForWorker64_TisRuntimeObject_mC332400E77D54ACC003671CE3D3D6DB08C9390DD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Parallel_For_m4F8049B55A36C35CB5C07476DA5A97FE0393A34B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Parallel_ThrowIfReducableToSingleOCE_m293DFE29E812301A3D3B10266912029D955CB951_RuntimeMethod_var;
@@ -13716,6 +13718,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_PossiblyCaptureContext_m027EA18025B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelForReplicaTask__ctor_m5CA9C4E7D23AE2367EC646033EC86D804685425F (ParallelForReplicaTask_tA8EF390CFE7A34F4D940DA70CFC2925E8E10E7A6 * __this, Action_1_tD9663D9715FAA4E62035CFCF1AD4D094EE7872DC * ___taskReplicaDelegate0, RuntimeObject * ___stateObject1, Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * ___parentTask2, TaskScheduler_t74FBEEEDBDD5E0088FF0EEC18F45CD866B098D5D * ___taskScheduler3, int32_t ___creationOptionsForReplica4, int32_t ___internalOptionsForReplica5, const RuntimeMethod* method);
 // System.Void System.Threading.Tasks.ParallelLoopState::.ctor(System.Threading.Tasks.ParallelLoopStateFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState__ctor_m1C6F08DEFFF8F0A934719260D78F8FCC08936040 (ParallelLoopState_t59ED988EF9EE69D7BAF611EFF46AB61AE6A62C49 * __this, ParallelLoopStateFlags_tEDC5F4829C1DD8D820A16E8F9E072664FEEDC127 * ___fbase0, const RuntimeMethod* method);
+// System.Int32 System.Threading.Tasks.ParallelLoopState32::get_CurrentIteration()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ParallelLoopState32_get_CurrentIteration_mEB5C41308673E1FB7E1D173E241B7018F590B5CC_inline (ParallelLoopState32_tE8B6448A0D6AD981C1F34A3F0021419C02A74BBF * __this, const RuntimeMethod* method);
+// System.Boolean System.Threading.Tasks.ParallelLoopStateFlags32::ShouldExitLoop(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopStateFlags32_ShouldExitLoop_m8498A916FD2803EA69900A573451BE497C570D61 (ParallelLoopStateFlags32_tE14C230FA67145D03CE9AC57160161357F10C06D * __this, int32_t ___CallerIteration0, const RuntimeMethod* method);
+// System.Int64 System.Threading.Tasks.ParallelLoopState64::get_CurrentIteration()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t ParallelLoopState64_get_CurrentIteration_m53B924B065B187813CAF9EAA979A3EE33C796831_inline (ParallelLoopState64_t46D0AEDB6BFCE7D0537C7BF1ACAE8D3215F96B3D * __this, const RuntimeMethod* method);
+// System.Boolean System.Threading.Tasks.ParallelLoopStateFlags64::ShouldExitLoop(System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopStateFlags64_ShouldExitLoop_m2FA196B30B59293163636DADDB9B1746A94F6125 (ParallelLoopStateFlags64_t02802E24D1F0704DE49049347A2CA48812E0E004 * __this, int64_t ___CallerIteration0, const RuntimeMethod* method);
 // System.Boolean System.Threading.Tasks.ParallelLoopStateFlags::AtomicLoopStateUpdate(System.Int32,System.Int32,System.Int32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopStateFlags_AtomicLoopStateUpdate_mF03FF24CAF19EF936C512DBFEB9F3A81192D2679 (ParallelLoopStateFlags_tEDC5F4829C1DD8D820A16E8F9E072664FEEDC127 * __this, int32_t ___newState0, int32_t ___illegalStates1, int32_t* ___oldState2, const RuntimeMethod* method);
 // System.Int32 System.Threading.Interlocked::CompareExchange(System.Int32&,System.Int32,System.Int32)
@@ -17482,7 +17492,7 @@ IL_0041:
 		String_t* L_14 = V_2;
 		NullCheck(L_13);
 		RuntimeObject * L_15;
-		L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_14);
+		L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_14);
 		V_0 = ((*(int64_t*)((int64_t*)UnBox(L_15, Int64_t378EE0D608BD3107E77238E85F30D2BBD46981F3_il2cpp_TypeInfo_var))));
 		V_1 = (bool)0;
 		goto IL_008d;
@@ -17502,7 +17512,7 @@ IL_0065:
 		int64_t L_22 = L_21;
 		RuntimeObject * L_23 = Box(Int64_t378EE0D608BD3107E77238E85F30D2BBD46981F3_il2cpp_TypeInfo_var, &L_22);
 		NullCheck(L_19);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_19, L_20, L_23);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_19, L_20, L_23);
 	}
 
 IL_008d:
@@ -24917,6 +24927,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState__ctor_m1C6F08DEFFF8F0A
 		return;
 	}
 }
+// System.Boolean System.Threading.Tasks.ParallelLoopState::get_InternalShouldExitCurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopState_get_InternalShouldExitCurrentIteration_mADB53E59137520CEA8AA15B4688FE5171FFF7B70 (ParallelLoopState_t59ED988EF9EE69D7BAF611EFF46AB61AE6A62C49 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0;
+		L_0 = Environment_GetResourceString_m8DFF827596B5FD533D3FE56900FA095F7D674617(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAFA58366D18B83459A7329A0ADE678FD54489434)), /*hidden argument*/NULL);
+		NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339 * L_1 = (NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_tB9D89F0E9470A2C423D239D7C68EE0CFD77F9339_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m40BC57BDA6E0E119B73700CC809A14B57DC65A90(L_1, L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ParallelLoopState_get_InternalShouldExitCurrentIteration_mADB53E59137520CEA8AA15B4688FE5171FFF7B70_RuntimeMethod_var)));
+	}
+}
+// System.Boolean System.Threading.Tasks.ParallelLoopState::get_ShouldExitCurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopState_get_ShouldExitCurrentIteration_mE7911810D6D67C21B203F71BCE09516C482A7D75 (ParallelLoopState_t59ED988EF9EE69D7BAF611EFF46AB61AE6A62C49 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0;
+		L_0 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean System.Threading.Tasks.ParallelLoopState::get_InternalShouldExitCurrentIteration() */, __this);
+		return L_0;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -24936,6 +24966,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState32__ctor_m4014807F36233
 		return;
 	}
 }
+// System.Int32 System.Threading.Tasks.ParallelLoopState32::get_CurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParallelLoopState32_get_CurrentIteration_mEB5C41308673E1FB7E1D173E241B7018F590B5CC (ParallelLoopState32_tE8B6448A0D6AD981C1F34A3F0021419C02A74BBF * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_currentIteration_2();
+		return L_0;
+	}
+}
 // System.Void System.Threading.Tasks.ParallelLoopState32::set_CurrentIteration(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState32_set_CurrentIteration_m3CDCDA34881DD04BB13D5691F2102EFE1388BF41 (ParallelLoopState32_tE8B6448A0D6AD981C1F34A3F0021419C02A74BBF * __this, int32_t ___value0, const RuntimeMethod* method)
 {
@@ -24943,6 +24981,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState32_set_CurrentIteration
 		int32_t L_0 = ___value0;
 		__this->set_m_currentIteration_2(L_0);
 		return;
+	}
+}
+// System.Boolean System.Threading.Tasks.ParallelLoopState32::get_InternalShouldExitCurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopState32_get_InternalShouldExitCurrentIteration_mC8A3727538216C10D10D39EFAC64CB3B1947925A (ParallelLoopState32_tE8B6448A0D6AD981C1F34A3F0021419C02A74BBF * __this, const RuntimeMethod* method)
+{
+	{
+		ParallelLoopStateFlags32_tE14C230FA67145D03CE9AC57160161357F10C06D * L_0 = __this->get_m_sharedParallelStateFlags_1();
+		int32_t L_1;
+		L_1 = ParallelLoopState32_get_CurrentIteration_mEB5C41308673E1FB7E1D173E241B7018F590B5CC_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = ParallelLoopStateFlags32_ShouldExitLoop_m8498A916FD2803EA69900A573451BE497C570D61(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
 	}
 }
 #ifdef __clang__
@@ -24964,6 +25015,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState64__ctor_m494104252161D
 		return;
 	}
 }
+// System.Int64 System.Threading.Tasks.ParallelLoopState64::get_CurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ParallelLoopState64_get_CurrentIteration_m53B924B065B187813CAF9EAA979A3EE33C796831 (ParallelLoopState64_t46D0AEDB6BFCE7D0537C7BF1ACAE8D3215F96B3D * __this, const RuntimeMethod* method)
+{
+	{
+		int64_t L_0 = __this->get_m_currentIteration_2();
+		return L_0;
+	}
+}
 // System.Void System.Threading.Tasks.ParallelLoopState64::set_CurrentIteration(System.Int64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState64_set_CurrentIteration_m12F06462D8920D3970C7650488F372120EF4F2DE (ParallelLoopState64_t46D0AEDB6BFCE7D0537C7BF1ACAE8D3215F96B3D * __this, int64_t ___value0, const RuntimeMethod* method)
 {
@@ -24971,6 +25030,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParallelLoopState64_set_CurrentIteration
 		int64_t L_0 = ___value0;
 		__this->set_m_currentIteration_2(L_0);
 		return;
+	}
+}
+// System.Boolean System.Threading.Tasks.ParallelLoopState64::get_InternalShouldExitCurrentIteration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParallelLoopState64_get_InternalShouldExitCurrentIteration_m7E2B88026A73F9746CF7AB25DD20304874CD3A34 (ParallelLoopState64_t46D0AEDB6BFCE7D0537C7BF1ACAE8D3215F96B3D * __this, const RuntimeMethod* method)
+{
+	{
+		ParallelLoopStateFlags64_t02802E24D1F0704DE49049347A2CA48812E0E004 * L_0 = __this->get_m_sharedParallelStateFlags_1();
+		int64_t L_1;
+		L_1 = ParallelLoopState64_get_CurrentIteration_m53B924B065B187813CAF9EAA979A3EE33C796831_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = ParallelLoopStateFlags64_ShouldExitLoop_m2FA196B30B59293163636DADDB9B1746A94F6125(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
 	}
 }
 #ifdef __clang__
@@ -25506,7 +25578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParallelOptions_get_EffectiveMaxConcu
 		L_1 = ParallelOptions_get_EffectiveTaskScheduler_m8100F4B96B5AACEEFA753F4DC3BC00C7EFCAB283(__this, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 System.Threading.Tasks.TaskScheduler::get_MaximumConcurrencyLevel() */, L_1);
+		L_2 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 System.Threading.Tasks.TaskScheduler::get_MaximumConcurrencyLevel() */, L_1);
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		if ((((int32_t)L_3) <= ((int32_t)0)))
@@ -36391,6 +36463,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t804B25CFE3FC13AAEE16C8FA3BF
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var);
 		Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_0 = ((Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var))->get_t_currentTask_0();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ParallelLoopState32_get_CurrentIteration_mEB5C41308673E1FB7E1D173E241B7018F590B5CC_inline (ParallelLoopState32_tE8B6448A0D6AD981C1F34A3F0021419C02A74BBF * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_currentIteration_2();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t ParallelLoopState64_get_CurrentIteration_m53B924B065B187813CAF9EAA979A3EE33C796831_inline (ParallelLoopState64_t46D0AEDB6BFCE7D0537C7BF1ACAE8D3215F96B3D * __this, const RuntimeMethod* method)
+{
+	{
+		int64_t L_0 = __this->get_m_currentIteration_2();
 		return L_0;
 	}
 }
